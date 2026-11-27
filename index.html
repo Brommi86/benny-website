@@ -112,7 +112,7 @@ a{color:inherit;text-decoration:none}a:hover{color:#D49896}
 @media (max-width:600px){.hdrName{display:none!important}.hdrPill{padding:0 16px!important;min-height:40px!important;font-size:13px!important}.hdrBurger{width:44px!important;height:44px!important}.capBox{width:min(300px, calc(100vw - 140px))!important}.capBox .s4cap span:nth-child(2){font-size:16px!important}.pDots,.pSkip{display:none!important}.ctaBtn{white-space:nowrap}.heroH1{font-size:clamp(34px, 10vw, 44px)!important}}
 @media (max-width:860px){#projekte{display:flex!important;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;gap:12px;padding:72px 20px 8px;scrollbar-width:none;-webkit-overflow-scrolling:touch}#projekte::-webkit-scrollbar{display:none}#projekte .panel{flex:0 0 86%;scroll-snap-align:center;position:relative!important;height:540px!important;min-height:540px!important}#projekte .panel .pwrap{position:absolute!important;inset:0;min-height:0!important;height:100%!important;animation:none!important;border-radius:2px}#projekte .panel .pwrap>div:last-child{padding:28px 0 28px!important;left:20px!important;right:20px!important}#projekte .panel h2{font-size:28px!important;overflow-wrap:anywhere}}
 @media (max-width:860px){.moreGrid{display:flex!important;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;gap:16px!important;margin:0 -20px;padding:0 20px 8px;scrollbar-width:none}.moreGrid::-webkit-scrollbar{display:none}.moreGrid>*{flex:0 0 80%;scroll-snap-align:start;scroll-margin-left:20px}}
-@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}} @media (min-width:861px){#top{height:max(640px, min(100svh, 1100px))!important}#projekte .panel{height:max(620px, 100svh)!important}.haltung{padding-top:clamp(120px, 12vw, 200px)!important;padding-bottom:clamp(120px, 12vw, 200px)!important}.haltung p{max-width:1180px!important}} @media (min-width:1200px){.moreGrid{grid-template-columns:repeat(4, minmax(0, 1fr))!important;gap:48px 28px!important}.moreGrid span[style*="font-size: 22px"]{font-size:19px!important}}
 @keyframes dlgIn{from{opacity:0}to{opacity:1}}
 @keyframes linkIn{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
 .menuDlg{animation:dlgIn .45s cubic-bezier(.16,1,.3,1) both}
@@ -155,7 +155,7 @@ button,a.btnL,a.btn,.chipD{transition:transform .25s cubic-bezier(.16,1,.3,1),ba
 </div>
 </section>
 
-<section style="padding: clamp(120px, 16vw, 240px) clamp(20px, 5vw, 72px); background: #ECEAE5; color: #121211">
+<section class="haltung" style="padding: clamp(120px, 16vw, 240px) clamp(20px, 5vw, 72px); background: #ECEAE5; color: #121211">
 <div class="reveal eb" style="color: #5C5A55; margin-bottom: 40px">Haltung</div>
 <p style="margin: 0; max-width: 1240px; font-family: Archivo, sans-serif; font-stretch: 116%; font-weight: 300; font-size: clamp(32px, 4.8vw, 76px); line-height: 1.1; letter-spacing: -0.03em"><span class="word" style="color: #121211; font-weight: 300">Vom </span><span class="word" style="color: #121211; font-weight: 300">Wohnhaus </span><span class="word" style="color: #121211; font-weight: 300">bis </span><span class="word" style="color: #121211; font-weight: 300">zum </span><span class="word" style="color: #121211; font-weight: 300">Behördenzentrum </span><span class="word" style="color: #121211; font-weight: 300">entwerfen </span><span class="word" style="color: #121211; font-weight: 300">wir </span><span class="word" style="color: #121211; font-weight: 300">Räume, </span><span class="word" style="color: #121211; font-weight: 300">die </span><span class="word" style="color: #121211; font-weight: 300">bleiben </span><span class="word" style="color: #121211; font-weight: 300">– </span><span class="word" style="color: #121211; font-weight: 300">geplant </span><span class="word" style="color: #121211; font-weight: 300">in </span><span class="word" style="color: #121211; font-weight: 300">Heilbronn, </span><span class="word" style="color: #121211; font-weight: 300">gebaut </span><span class="word" style="color: #121211; font-weight: 300">für </span><span class="word" style="color: #121211; font-weight: 300">die </span><span class="word" style="color: #A85857; font-weight: 500">Menschen </span><span class="word" style="color: #A85857; font-weight: 500">der </span><span class="word" style="color: #A85857; font-weight: 500">Region. </span></p>
 </section>
@@ -313,7 +313,7 @@ button,a.btnL,a.btn,.chipD{transition:transform .25s cubic-bezier(.16,1,.3,1),ba
 
 </div>
 </div>
-<div class="rule" style="height: 1px; background: #121211; margin: clamp(80px, 10vw, 140px) 0 32px"></div>
+<div class="rule" style="height: 1px; background: #121211; margin: clamp(72px, 7vw, 112px) 0 32px"></div>
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; align-items: baseline; margin-bottom: 32px">
 <h3 class="reveal" style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 24px; font-weight: 500">Leistungsphasen 1–9 nach HOAI</h3>
 <span style="font-size: 13px; color: #5C5A55">Alle Phasen oder einzelne Leistungen</span>
@@ -322,47 +322,47 @@ button,a.btnL,a.btn,.chipD{transition:transform .25s cubic-bezier(.16,1,.3,1),ba
 
 <div class="reveal phase" style="padding: 20px 16px 20px 0; border-left: 1px solid #C9C6BF; padding-left: 16px; display: flex; flex-direction: column; gap: 10px">
 <span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 36px; font-weight: 300; line-height: 1; color: #A85857">1</span>
-<span style="font-size: 14px; line-height: 1.4">Grundlagen</span>
+<span style="font-size: 14px; line-height: 1.4; hyphens: auto; -webkit-hyphens: auto">Grundlagen</span>
 </div>
 
 <div class="reveal phase" style="padding: 20px 16px 20px 0; border-left: 1px solid #C9C6BF; padding-left: 16px; display: flex; flex-direction: column; gap: 10px">
 <span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 36px; font-weight: 300; line-height: 1; color: #A85857">2</span>
-<span style="font-size: 14px; line-height: 1.4">Vorplanung</span>
+<span style="font-size: 14px; line-height: 1.4; hyphens: auto; -webkit-hyphens: auto">Vorplanung</span>
 </div>
 
 <div class="reveal phase" style="padding: 20px 16px 20px 0; border-left: 1px solid #C9C6BF; padding-left: 16px; display: flex; flex-direction: column; gap: 10px">
 <span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 36px; font-weight: 300; line-height: 1; color: #A85857">3</span>
-<span style="font-size: 14px; line-height: 1.4">Entwurf</span>
+<span style="font-size: 14px; line-height: 1.4; hyphens: auto; -webkit-hyphens: auto">Entwurf</span>
 </div>
 
 <div class="reveal phase" style="padding: 20px 16px 20px 0; border-left: 1px solid #C9C6BF; padding-left: 16px; display: flex; flex-direction: column; gap: 10px">
 <span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 36px; font-weight: 300; line-height: 1; color: #A85857">4</span>
-<span style="font-size: 14px; line-height: 1.4">Genehmigung</span>
+<span style="font-size: 14px; line-height: 1.4; hyphens: auto; -webkit-hyphens: auto">Genehmigung</span>
 </div>
 
 <div class="reveal phase" style="padding: 20px 16px 20px 0; border-left: 1px solid #C9C6BF; padding-left: 16px; display: flex; flex-direction: column; gap: 10px">
 <span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 36px; font-weight: 300; line-height: 1; color: #A85857">5</span>
-<span style="font-size: 14px; line-height: 1.4">Ausführungsplanung</span>
+<span style="font-size: 14px; line-height: 1.4; hyphens: auto; -webkit-hyphens: auto">Ausführungsplanung</span>
 </div>
 
 <div class="reveal phase" style="padding: 20px 16px 20px 0; border-left: 1px solid #C9C6BF; padding-left: 16px; display: flex; flex-direction: column; gap: 10px">
 <span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 36px; font-weight: 300; line-height: 1; color: #A85857">6</span>
-<span style="font-size: 14px; line-height: 1.4">Ausschreibung</span>
+<span style="font-size: 14px; line-height: 1.4; hyphens: auto; -webkit-hyphens: auto">Ausschreibung</span>
 </div>
 
 <div class="reveal phase" style="padding: 20px 16px 20px 0; border-left: 1px solid #C9C6BF; padding-left: 16px; display: flex; flex-direction: column; gap: 10px">
 <span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 36px; font-weight: 300; line-height: 1; color: #A85857">7</span>
-<span style="font-size: 14px; line-height: 1.4">Vergabe</span>
+<span style="font-size: 14px; line-height: 1.4; hyphens: auto; -webkit-hyphens: auto">Vergabe</span>
 </div>
 
 <div class="reveal phase" style="padding: 20px 16px 20px 0; border-left: 1px solid #C9C6BF; padding-left: 16px; display: flex; flex-direction: column; gap: 10px">
 <span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 36px; font-weight: 300; line-height: 1; color: #A85857">8</span>
-<span style="font-size: 14px; line-height: 1.4">Bauüberwachung</span>
+<span style="font-size: 14px; line-height: 1.4; hyphens: auto; -webkit-hyphens: auto">Bauüberwachung</span>
 </div>
 
 <div class="reveal phase" style="padding: 20px 16px 20px 0; border-left: 1px solid #C9C6BF; padding-left: 16px; display: flex; flex-direction: column; gap: 10px">
 <span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 36px; font-weight: 300; line-height: 1; color: #A85857">9</span>
-<span style="font-size: 14px; line-height: 1.4">Objektbetreuung</span>
+<span style="font-size: 14px; line-height: 1.4; hyphens: auto; -webkit-hyphens: auto">Objektbetreuung</span>
 </div>
 
 </div>
@@ -525,7 +525,7 @@ button,a.btnL,a.btn,.chipD{transition:transform .25s cubic-bezier(.16,1,.3,1),ba
 </div>
 </div>
 <label style="display: flex; flex-direction: column; gap: 4px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #A9A69F">Ihr Vorhaben<textarea class="fld" name="nachricht" rows="4" placeholder="z. B. Neubau eines Einfamilienhauses in Flein, Grundstück vorhanden" style="resize: vertical; min-height: 120px"></textarea></label>
-<label style="display: flex; gap: 12px; align-items: flex-start; font-size: 14px; line-height: 1.5; color: #C9C6BF"><input type="checkbox" aria-invalid="false" style="width: 20px; height: 20px; margin: 2px 0 0; accent-color: #A85857">Ich habe die <a href="datenschutz.html" style="text-decoration: underline">Datenschutzerklärung</a> gelesen und bin mit der Verarbeitung meiner Angaben einverstanden. *</label>
+<label style="display: flex; gap: 12px; align-items: flex-start; font-size: 14px; line-height: 1.5; color: #C9C6BF"><input type="checkbox" aria-invalid="false" style="width: 20px; height: 20px; margin: 2px 0 0; accent-color: #A85857; flex: none"><span>Ich habe die <a href="datenschutz.html" style="text-decoration: underline">Datenschutzerklärung</a> gelesen und bin mit der Verarbeitung meiner Angaben einverstanden. *</span></label>
 
 <button type="button" class="btn btnR" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 14px; min-height: 60px; padding: 0 36px; background: #A85857; color: #FFFFFF; border: 0; border-radius: 999px; font: 500 15px Inter, sans-serif; cursor: pointer">Anfrage senden<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></button>
 <span style="font-size: 13px; color: #A9A69F">* Pflichtfeld · Wir antworten innerhalb von zwei Werktagen.</span>
@@ -592,7 +592,7 @@ button,a.btnL,a.btn,.chipD{transition:transform .25s cubic-bezier(.16,1,.3,1),ba
 </div>
 </section>
 
-<section style="padding: clamp(120px, 16vw, 240px) clamp(20px, 5vw, 72px); background: #ECEAE5; color: #121211">
+<section class="haltung" style="padding: clamp(120px, 16vw, 240px) clamp(20px, 5vw, 72px); background: #ECEAE5; color: #121211">
 <div class="reveal eb" style="color: #5C5A55; margin-bottom: 40px">Haltung</div>
 <p style="margin: 0; max-width: 1240px; font-family: Archivo, sans-serif; font-stretch: 116%; font-weight: 300; font-size: clamp(32px, 4.8vw, 76px); line-height: 1.1; letter-spacing: -0.03em"><sc-for list="{{words}}" as="w" hint-placeholder-count="24"><span class="word" style="color: {{w.c}}; font-weight: {{w.fw}}">{{w.t}} </span></sc-for></p>
 </section>
@@ -655,7 +655,7 @@ button,a.btnL,a.btn,.chipD{transition:transform .25s cubic-bezier(.16,1,.3,1),ba
 </sc-for>
 </div>
 </div>
-<div class="rule" style="height: 1px; background: #121211; margin: clamp(80px, 10vw, 140px) 0 32px"></div>
+<div class="rule" style="height: 1px; background: #121211; margin: clamp(72px, 7vw, 112px) 0 32px"></div>
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; align-items: baseline; margin-bottom: 32px">
 <h3 class="reveal" style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 24px; font-weight: 500">Leistungsphasen 1–9 nach HOAI</h3>
 <span style="font-size: 13px; color: #5C5A55">Alle Phasen oder einzelne Leistungen</span>
@@ -664,7 +664,7 @@ button,a.btnL,a.btn,.chipD{transition:transform .25s cubic-bezier(.16,1,.3,1),ba
 <sc-for list="{{phases}}" as="f" hint-placeholder-count="9">
 <div class="reveal phase" style="padding: 20px 16px 20px 0; border-left: 1px solid #C9C6BF; padding-left: 16px; display: flex; flex-direction: column; gap: 10px">
 <span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 36px; font-weight: 300; line-height: 1; color: #A85857">{{f.n}}</span>
-<span style="font-size: 14px; line-height: 1.4">{{f.t}}</span>
+<span style="font-size: 14px; line-height: 1.4; hyphens: auto; -webkit-hyphens: auto">{{f.t}}</span>
 </div>
 </sc-for>
 </div>
@@ -752,7 +752,7 @@ button,a.btnL,a.btn,.chipD{transition:transform .25s cubic-bezier(.16,1,.3,1),ba
 </div>
 </div>
 <label style="display: flex; flex-direction: column; gap: 4px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #A9A69F">Ihr Vorhaben<textarea class="fld" name="nachricht" rows="4" placeholder="z. B. Neubau eines Einfamilienhauses in Flein, Grundstück vorhanden" style="resize: vertical; min-height: 120px"></textarea></label>
-<label style="display: flex; gap: 12px; align-items: flex-start; font-size: 14px; line-height: 1.5; color: #C9C6BF"><input type="checkbox" onChange="{{toggleConsent}}" aria-invalid="{{errConsent}}" style="width: 20px; height: 20px; margin: 2px 0 0; accent-color: #A85857">Ich habe die <a href="datenschutz.html" style="text-decoration: underline">Datenschutzerklärung</a> gelesen und bin mit der Verarbeitung meiner Angaben einverstanden. *</label>
+<label style="display: flex; gap: 12px; align-items: flex-start; font-size: 14px; line-height: 1.5; color: #C9C6BF"><input type="checkbox" onChange="{{toggleConsent}}" aria-invalid="{{errConsent}}" style="width: 20px; height: 20px; margin: 2px 0 0; accent-color: #A85857; flex: none"><span>Ich habe die <a href="datenschutz.html" style="text-decoration: underline">Datenschutzerklärung</a> gelesen und bin mit der Verarbeitung meiner Angaben einverstanden. *</span></label>
 <sc-if value="{{showErrConsent}}" hint-placeholder-val="{{ false }}"><span role="alert" style="margin-top: -16px; font-size: 13px; color: #E59A97">Bitte stimmen Sie der Datenschutzerklärung zu.</span></sc-if>
 <button type="button" onClick="{{send}}" class="btn btnR" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 14px; min-height: 60px; padding: 0 36px; background: #A85857; color: #FFFFFF; border: 0; border-radius: 999px; font: 500 15px Inter, sans-serif; cursor: pointer">Anfrage senden<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></button>
 <span style="font-size: 13px; color: #A9A69F">* Pflichtfeld · Wir antworten innerhalb von zwei Werktagen.</span>
