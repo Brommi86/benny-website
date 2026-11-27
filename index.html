@@ -1,0 +1,899 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>müller.architekten – Architekten in Heilbronn</title>
+<meta name="description" content="müller.architekten aus Heilbronn: Architektur für Wohnen, Gewerbe und öffentliche Bauten – Neubau, Sanierung, Brandschutz und Wettbewerbe. Seit 1989.">
+<link rel="icon" type="image/png" href="bilder/logo-m.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,200..800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#1B1B1A}
+a{color:inherit;text-decoration:none}a:hover{color:#D49896}
+:focus-visible{outline:2px solid #A85857;outline-offset:3px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.navD{display:flex}.burger{display:none}
+@media (max-width:860px){.navD,.hdrCta{display:none!important}.burger{display:flex!important}}
+.btnL{transition:background .5s var(--ease),color .5s var(--ease)}.btnL:hover{background:#ECEAE5;color:#121211!important}
+.fld{width:100%;box-sizing:border-box;min-height:52px;padding:14px 0;background:transparent;border:0;border-bottom:1px solid #4A4946;color:#ECEAE5;font:400 17px Inter,sans-serif;transition:border-color .4s}.fld:focus{outline:none;border-bottom-color:#A85857}
+.eb{display:flex;align-items:center;gap:14px;font-size:12px;font-weight:500;letter-spacing:.2em;text-transform:uppercase}.eb::before{content:"";display:block;width:28px;height:1px;background:#A85857}
+.chipD{transition:background .4s var(--ease),color .4s var(--ease),border-color .4s}
+:root{--ease:cubic-bezier(.16,1,.3,1);--ease2:cubic-bezier(.77,0,.18,1)}
+@keyframes letter{0%{transform:translateY(105%) rotate(6deg);filter:blur(8px);opacity:0}100%{transform:none;filter:none;opacity:1}}
+@keyframes curtain{from{clip-path:inset(100% 0 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes curtainX{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes settle{from{transform:scale(1.35)}to{transform:scale(1.06)}}
+@keyframes fade{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}
+@keyframes parallax{from{transform:translateY(-12%) scale(1.25)}to{transform:translateY(12%) scale(1.25)}}
+@keyframes heroOut{to{transform:translateY(22%) scale(1.15);filter:brightness(.55)}}
+@keyframes lit{from{opacity:.14}to{opacity:1}}
+@keyframes drift{to{transform:translateX(-50%)}}
+@keyframes driftR{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+@keyframes line{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes progress{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes darken{from{background-color:#ECEAE5;color:#121211}to{background-color:#121211;color:#ECEAE5}}
+@keyframes count{from{opacity:0;transform:translateY(60%)}to{opacity:1;transform:none}}
+@keyframes breathe{0%,100%{transform:scaleY(.3);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}}
+.l{display:inline-block;animation:letter 1.6s var(--ease) both}
+.heroImg{animation:curtain 1.8s var(--ease2) .5s both}
+.heroImg>.in{animation:settle 3.2s var(--ease) .5s both}
+.heroWrap{animation:heroOut linear both;animation-timeline:scroll(root);animation-range:0 120vh}
+.fade{animation:fade 1.4s var(--ease) both}
+.reveal{animation:fade linear both;animation-timeline:view();animation-range:entry 5% cover 30%}
+.wipe{animation:curtain linear both;animation-timeline:view();animation-range:entry 0% cover 45%}
+.wipeX{animation:curtainX linear both;animation-timeline:view();animation-range:entry 10% cover 40%}
+.para{animation:parallax linear both;animation-timeline:view()}
+.word{animation:lit linear both;animation-timeline:view();animation-range:cover 20% cover 45%}
+.rule{transform-origin:left;animation:line linear both;animation-timeline:view();animation-range:entry 0% cover 35%}
+.bar{transform-origin:left;animation:progress linear both;animation-timeline:scroll(root)}
+.dark{animation:darken linear both;animation-timeline:view();animation-range:entry 0% entry 60%}
+.num{display:inline-block;animation:count linear both;animation-timeline:view();animation-range:entry 20% cover 40%}
+.mq{animation:drift 70s linear infinite}.mqR{animation:driftR 80s linear infinite}
+.marq:hover .mq,.marq:hover .mqR{animation-play-state:paused}
+@keyframes cap{0%,2%{opacity:0;transform:translateY(24px)}8%,31%{opacity:1;transform:none}36%,100%{opacity:0;transform:translateY(-16px)}}
+@keyframes tick{0%{transform:scaleX(0)}33%{transform:scaleX(1)}34%,100%{transform:scaleX(0)}}
+@keyframes slide{0%{opacity:0;transform:scale(1.14)}6%{opacity:1}33%{opacity:1}39%{opacity:0}100%{opacity:0;transform:scale(1)}}
+.slide{animation:slide 21s linear infinite}.cap{animation:cap 21s var(--ease) infinite}.tick{transform-origin:left;animation:tick 21s linear infinite}
+.card .ph{filter:saturate(.8);transition:filter 1.2s var(--ease),transform 1.6s var(--ease)}
+.card:hover .ph{transform:scale(1.05)}
+.card .cta{transform:translate(-50%,-50%) scale(0);transition:transform .8s var(--ease)}
+.card:hover .cta{transform:translate(-50%,-50%) scale(1)}
+.card:hover .ph{filter:saturate(1.05) brightness(1.05)}
+.card .t{background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .9s var(--ease)}
+.card:hover .t{background-size:100% 1px}
+.row{position:relative;transition:padding .7s var(--ease)}
+.row .thumb{clip-path:inset(0 0 0 100%);transition:clip-path .8s var(--ease2)}
+.row:hover{padding-left:28px;color:#A85857}.row:hover .thumb{clip-path:inset(0 0 0 0)}
+.row .ar{transition:transform .7s var(--ease)}.row:hover .ar{transform:translateX(10px) rotate(-45deg)}
+.btn{position:relative;overflow:hidden;isolation:isolate}
+.btn::before{content:"";position:absolute;inset:0;background:#A85857;transform:translateY(101%);transition:transform .7s var(--ease2);z-index:-1}
+.btn:hover::before{transform:none}.btn:hover{color:#ECEAE5}
+.btnR::before{background:#ECEAE5}.btnR:hover{color:#121211!important}
+.chip{transition:background .4s var(--ease),color .4s var(--ease)}
+.hint{animation:breathe 2.4s ease-in-out infinite}
+@keyframes pgrow{from{transform:scale(1.2)}to{transform:scale(1)}}
+@keyframes psink{to{transform:scale(.92);filter:brightness(.25)}}
+.panel .pbg{animation:pgrow linear both;animation-timeline:view();animation-range:entry 0% cover 50%}
+.panel .pwrap{animation:psink linear both;animation-timeline:view();animation-range:exit 0% exit 100%}
+.strip::-webkit-scrollbar{height:2px}.strip::-webkit-scrollbar-thumb{background:#A85857}
+.tile img{transition:transform 1.4s var(--ease),filter 1.4s var(--ease);filter:saturate(.7) brightness(.85)}
+.tile:hover img{transform:scale(1.06);filter:none}
+.svc:hover{color:#A85857!important}
+.phase{transition:background .5s var(--ease)}.phase:hover{background:#E2DFD8}
+@keyframes blind{from{transform:translateY(0)}to{transform:translateY(-101%)}}
+@keyframes expand{from{clip-path:inset(0 13% 0 13%)}to{clip-path:inset(0 0 0 0)}}
+@keyframes counter{from{transform:scale(1.18)}to{transform:scale(1)}}
+@keyframes lift{from{transform:translateY(0)}to{transform:translateY(-55%)}}
+@keyframes cardIn{from{clip-path:inset(100% 0 0 0);transform:translateY(60px)}to{clip-path:inset(0);transform:none}}
+.blind{animation:blind 1.5s var(--ease2) both}
+.hxClip{animation:expand linear both;animation-timeline:scroll(root);animation-range:0 700px}
+.hxImg{animation:counter linear both;animation-timeline:scroll(root);animation-range:0 900px}
+.hxIn{animation:settle 3.4s var(--ease) .3s both}
+.hxCard{animation:lift linear both;animation-timeline:scroll(root);animation-range:0 1400px}
+.hxCardImg{animation:cardIn 1.6s var(--ease2) 1.9s both}
+.hxCard img{transition:transform 1.2s var(--ease)}.hxCard:hover img{transform:scale(1.06)}
+
+@keyframes rise{from{transform:translateY(110%)}to{transform:none}}
+.rise{display:block;animation:rise 1.3s var(--ease) both}
+@keyframes slat{0%{transform:rotateY(0)}100%{transform:rotateY(-92deg)}}
+@keyframes glow{0%{opacity:0}100%{opacity:1}}
+.slat{transform-origin:left center;animation:slat 1.5s cubic-bezier(.77,0,.18,1) both;backface-visibility:hidden}
+.gr4{animation:glow 1.2s ease 2.2s both}
+@keyframes introOut{0%,100%{opacity:1}}
+@keyframes iOut{to{opacity:0;transform:translateY(-24px);filter:blur(6px)}}
+.introOut{animation:iOut .9s cubic-bezier(.77,0,.18,1) 1.9s both}
+.s4slide{animation:slide 21s linear infinite both}.s4cap{animation:cap 21s var(--ease) infinite both}.s4tick{transform-origin:left;animation:tick 21s linear infinite both}
+.skip .slat{animation:none!important;transform:rotateY(-92deg)}.skip .introOut{display:none}.skip .rise,.skip .fade,.skip .gr4{animation:none!important;opacity:1}
+.mLink{transition:color .3s,padding .5s var(--ease)}.mLink:hover,.mLink:focus-visible{color:#A85857;padding-left:18px}
+@media (max-width:860px){.panel{position:relative!important;height:auto!important;min-height:560px}.panel .pwrap{position:relative!important;min-height:560px;animation:none!important}.menuImg{display:none}}
+@media (prefers-reduced-motion:reduce){.slat{transform:rotateY(-92deg)}.introOut{display:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div id="app" style="display: contents">
+<div style="font-family: Inter, system-ui, sans-serif; color: #ECEAE5; background: #1B1B1A; overflow: clip">
+
+<div aria-hidden="true" class="bar" style="position: fixed; top: 0; left: 0; right: 0; height: 2px; background: #A85857; z-index: 10"></div>
+
+<header style="position: fixed; top: 0; left: 0; right: 0; z-index: 50; transform: translateY(0%); background: rgba(27,27,26,0); backdrop-filter: none; -webkit-backdrop-filter: none; transition: transform .6s cubic-bezier(.16,1,.3,1), background .4s">
+<div class="fade" style="animation-delay: .2s; display: flex; justify-content: space-between; align-items: center; padding: 16px clamp(20px, 5vw, 72px)">
+<a href="#top" aria-label="müller.architekten – Startseite" style="display: flex; align-items: center; gap: 12px; font-family: Archivo, sans-serif; font-stretch: 116%; font-weight: 500; font-size: 17px; color: #F4F2EE"><img src="bilder/logo-m.png" alt="" width="40" height="40" style="display: block">müller.architekten</a>
+<div style="display: flex; align-items: center; gap: 12px"><a href="#kontakt" class="btnL" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border-radius: 999px; background: #A85857; color: #FFFFFF; font-size: 14px; font-weight: 500">Anfragen</a><button type="button" aria-label="Menü öffnen" aria-expanded="false" style="width: 52px; height: 52px; border-radius: 50%; background: rgba(27,27,26,.35); border: 1px solid rgba(244,242,238,.35); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; cursor: pointer"><span aria-hidden="true" style="display: block; width: 22px; height: 1.5px; background: #F4F2EE"></span><span aria-hidden="true" style="display: block; width: 22px; height: 1.5px; background: #F4F2EE"></span></button></div>
+</div>
+</header>
+
+
+<section id="top" class="" style="position: relative; height: clamp(660px, 62vw, 960px); overflow: hidden; perspective: 1800px">
+<div style="position: absolute; inset: 0"><img src="bilder/weingut-1.webp" alt="Weingut Albrecht-Kiessling" class="s4slide" fetchpriority="high" loading="eager" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; animation-delay: 1.6s; animation-play-state: running"><img src="bilder/armsuender-1.webp" alt="Wohnhaus Armsündersteige" class="s4slide" fetchpriority="low" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; animation-delay: 8.6s; animation-play-state: running"><img src="bilder/hero-1.webp" alt="BeGo, Bürogebäude" class="s4slide" fetchpriority="low" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; animation-delay: 15.6s; animation-play-state: running"></div>
+<div aria-hidden="true" class="gr4" style="position: absolute; inset: 0; z-index: 3; background: linear-gradient(to top, rgba(18,18,17,.88) 0%, rgba(18,18,17,.55) 28%, rgba(18,18,17,0) 58%), linear-gradient(to bottom, rgba(18,18,17,.45), rgba(18,18,17,0) 22%)"></div>
+<div aria-hidden="true" style="position: absolute; inset: 0; z-index: 4; display: flex; transform-style: preserve-3d">
+<span class="slat" style="flex: 1; background: #1B1B1A; border-right: 1px solid #232322; animation-delay: 1.70s"></span><span class="slat" style="flex: 1; background: #1B1B1A; border-right: 1px solid #232322; animation-delay: 1.77s"></span><span class="slat" style="flex: 1; background: #1B1B1A; border-right: 1px solid #232322; animation-delay: 1.84s"></span><span class="slat" style="flex: 1; background: #1B1B1A; border-right: 1px solid #232322; animation-delay: 1.91s"></span><span class="slat" style="flex: 1; background: #1B1B1A; border-right: 1px solid #232322; animation-delay: 1.98s"></span><span class="slat" style="flex: 1; background: #1B1B1A; border-right: 1px solid #232322; animation-delay: 2.05s"></span><span class="slat" style="flex: 1; background: #1B1B1A; border-right: 1px solid #232322; animation-delay: 2.12s"></span><span class="slat" style="flex: 1; background: #1B1B1A; border-right: 1px solid #232322; animation-delay: 2.19s"></span><span class="slat" style="flex: 1; background: #1B1B1A; border-right: 1px solid #232322; animation-delay: 2.26s"></span><span class="slat" style="flex: 1; background: #1B1B1A; border-right: 1px solid #232322; animation-delay: 2.33s"></span><span class="slat" style="flex: 1; background: #1B1B1A; border-right: 1px solid #232322; animation-delay: 2.40s"></span><span class="slat" style="flex: 1; background: #1B1B1A; border-right: 1px solid #232322; animation-delay: 2.47s"></span>
+</div>
+
+<div style="position: absolute; left: clamp(20px, 5vw, 72px); right: clamp(20px, 5vw, 72px); bottom: clamp(36px, 4.5vw, 64px); z-index: 6; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 32px; color: #F4F2EE">
+<h1 style="margin: 0; max-width: 900px; font-family: Archivo, sans-serif; font-stretch: 116%; font-weight: 300; font-size: clamp(36px, 4.6vw, 76px); line-height: 1.04; letter-spacing: -0.035em; text-shadow: 0 2px 24px rgba(0,0,0,.35)"><span style="display: block; overflow: hidden; padding-bottom: .06em"><span class="rise" style="animation-delay: .5s">Wir planen Gebäude,</span></span><span style="display: block; overflow: hidden; padding-bottom: .06em"><span class="rise" style="animation-delay: .65s; font-weight: 500">die sich in ihren Ort fügen<span style="color: #A85857">.</span></span></span></h1>
+<div class="fade" style="animation-delay: 3.3s; display: flex; align-items: flex-end; gap: 20px"><button type="button" aria-pressed="false" aria-label="Slideshow pausieren" style="width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(244,242,238,.45); background: rgba(27,27,26,.3); color: #F4F2EE; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6zM14 4h4v16h-4z"></path></svg></button><div style="position: relative; width: 300px; height: 76px"><div class="s4cap" style="position: absolute; right: 0; bottom: 0; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; text-align: right; animation-delay: 1.6s; animation-play-state: running"><span style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #C9C6BF">Heilbronn · Weinbau</span><span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 20px; font-weight: 500; letter-spacing: -0.02em">Weingut Albrecht-Kiessling</span><span style="display: block; width: 140px; height: 1px; background: rgba(244,242,238,.3)"><span class="s4tick" style="display: block; height: 1px; background: #F4F2EE; animation-delay: 1.6s; animation-play-state: running"></span></span></div><div class="s4cap" style="position: absolute; right: 0; bottom: 0; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; text-align: right; animation-delay: 8.6s; animation-play-state: running"><span style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #C9C6BF">Heilbronn · Wohnen</span><span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 20px; font-weight: 500; letter-spacing: -0.02em">Wohnhaus Armsündersteige</span><span style="display: block; width: 140px; height: 1px; background: rgba(244,242,238,.3)"><span class="s4tick" style="display: block; height: 1px; background: #F4F2EE; animation-delay: 8.6s; animation-play-state: running"></span></span></div><div class="s4cap" style="position: absolute; right: 0; bottom: 0; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; text-align: right; animation-delay: 15.6s; animation-play-state: running"><span style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #C9C6BF">Flein · Gewerbe</span><span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 20px; font-weight: 500; letter-spacing: -0.02em">BeGo, Bürogebäude</span><span style="display: block; width: 140px; height: 1px; background: rgba(244,242,238,.3)"><span class="s4tick" style="display: block; height: 1px; background: #F4F2EE; animation-delay: 15.6s; animation-play-state: running"></span></span></div></div></div>
+</div>
+</section>
+
+<section style="padding: clamp(120px, 16vw, 240px) clamp(20px, 5vw, 72px); background: #ECEAE5; color: #121211">
+<div class="reveal eb" style="color: #5C5A55; margin-bottom: 40px">Haltung</div>
+<p style="margin: 0; max-width: 1240px; font-family: Archivo, sans-serif; font-stretch: 116%; font-weight: 300; font-size: clamp(32px, 4.8vw, 76px); line-height: 1.1; letter-spacing: -0.03em"><span class="word" style="color: #121211; font-weight: 300">Vom </span><span class="word" style="color: #121211; font-weight: 300">Wohnhaus </span><span class="word" style="color: #121211; font-weight: 300">bis </span><span class="word" style="color: #121211; font-weight: 300">zum </span><span class="word" style="color: #121211; font-weight: 300">Behördenzentrum </span><span class="word" style="color: #121211; font-weight: 300">entwerfen </span><span class="word" style="color: #121211; font-weight: 300">wir </span><span class="word" style="color: #A85857; font-weight: 500">Räume, </span><span class="word" style="color: #A85857; font-weight: 500">die </span><span class="word" style="color: #A85857; font-weight: 500">bleiben </span><span class="word" style="color: #121211; font-weight: 300">– </span><span class="word" style="color: #121211; font-weight: 300">geplant </span><span class="word" style="color: #121211; font-weight: 300">in </span><span class="word" style="color: #121211; font-weight: 300">Heilbronn, </span><span class="word" style="color: #121211; font-weight: 300">gebaut </span><span class="word" style="color: #121211; font-weight: 300">für </span><span class="word" style="color: #A85857; font-weight: 500">die </span><span class="word" style="color: #121211; font-weight: 300">Menschen </span><span class="word" style="color: #121211; font-weight: 300">der </span><span class="word" style="color: #121211; font-weight: 300">Region. </span></p>
+</section>
+
+<div id="projekte">
+
+<section class="panel" style="position: sticky; top: 0; height: clamp(600px, 58vw, 880px)">
+<div class="pwrap" style="position: absolute; inset: 0; overflow: hidden; background: #1B1B1A">
+<img class="pbg" src="bilder/armsuender-1.webp" alt="Wohnhaus Armsündersteige" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(20,20,19,.82) 0%, rgba(20,20,19,.1) 62%)"></div>
+<div style="position: absolute; right: clamp(20px, 5vw, 72px); top: 50%; transform: translateY(-50%); z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 14px" aria-label="Fortschritt"><span aria-hidden="true" style="display: block; width: 2px; height: 40px; background: #ECEAE5; transition: height .6s"></span><span aria-hidden="true" style="display: block; width: 2px; height: 14px; background: rgba(236,234,229,.35); transition: height .6s"></span><span aria-hidden="true" style="display: block; width: 2px; height: 14px; background: rgba(236,234,229,.35); transition: height .6s"></span><span aria-hidden="true" style="display: block; width: 2px; height: 14px; background: rgba(236,234,229,.35); transition: height .6s"></span><span aria-hidden="true" style="display: block; width: 2px; height: 14px; background: rgba(236,234,229,.35); transition: height .6s"></span></div>
+<a href="#leistungen" style="position: absolute; right: clamp(20px, 5vw, 72px); bottom: clamp(28px, 4vw, 56px); z-index: 2; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #C9C6BF">Projekte überspringen<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 4v16M6 14l6 6 6-6"></path></svg></a>
+<div style="position: absolute; left: clamp(20px, 5vw, 72px); right: clamp(20px, 5vw, 72px); top: 0; bottom: 0; display: flex; flex-direction: column; justify-content: space-between; padding: clamp(96px, 8vw, 120px) 0 clamp(32px, 5vw, 72px); max-width: 680px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 24px; max-width: 100%"><span style="font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: #D49896">Ausgewählte Projekte · 01 / 05</span></div>
+<div class="reveal" style="display: flex; flex-direction: column; gap: 20px">
+<span style="font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #C9C6BF">Heilbronn · Wohnen · 2001</span>
+<h2 style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 116%; font-weight: 500; font-size: clamp(40px, 5.4vw, 88px); line-height: .98; letter-spacing: -0.035em">Wohnhaus Armsündersteige</h2>
+<a href="projekt-wohnhaus-armsuendersteige.html" class="btn" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 12px; min-height: 52px; padding: 0 28px; border: 1px solid #ECEAE5; border-radius: 999px; font-size: 14px; font-weight: 500; color: #ECEAE5">Projekt ansehen<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="panel" style="position: sticky; top: 0; height: clamp(600px, 58vw, 880px)">
+<div class="pwrap" style="position: absolute; inset: 0; overflow: hidden; background: #1B1B1A">
+<img class="pbg" src="bilder/muenzing-1.webp" alt="Münzing Chemie" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(20,20,19,.82) 0%, rgba(20,20,19,.1) 62%)"></div>
+<div style="position: absolute; right: clamp(20px, 5vw, 72px); top: 50%; transform: translateY(-50%); z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 14px" aria-label="Fortschritt"><span aria-hidden="true" style="display: block; width: 2px; height: 14px; background: rgba(236,234,229,.35); transition: height .6s"></span><span aria-hidden="true" style="display: block; width: 2px; height: 40px; background: #ECEAE5; transition: height .6s"></span><span aria-hidden="true" style="display: block; width: 2px; height: 14px; background: rgba(236,234,229,.35); transition: height .6s"></span><span aria-hidden="true" style="display: block; width: 2px; height: 14px; background: rgba(236,234,229,.35); transition: height .6s"></span><span aria-hidden="true" style="display: block; width: 2px; height: 14px; background: rgba(236,234,229,.35); transition: height .6s"></span></div>
+<a href="#leistungen" style="position: absolute; right: clamp(20px, 5vw, 72px); bottom: clamp(28px, 4vw, 56px); z-index: 2; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #C9C6BF">Projekte überspringen<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 4v16M6 14l6 6 6-6"></path></svg></a>
+<div style="position: absolute; left: clamp(20px, 5vw, 72px); right: clamp(20px, 5vw, 72px); top: 0; bottom: 0; display: flex; flex-direction: column; justify-content: space-between; padding: clamp(96px, 8vw, 120px) 0 clamp(32px, 5vw, 72px); max-width: 680px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 24px; max-width: 100%"><span style="font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: #D49896">Ausgewählte Projekte · 02 / 05</span></div>
+<div class="reveal" style="display: flex; flex-direction: column; gap: 20px">
+<span style="font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #C9C6BF">Abstatt · Industrie · 2015</span>
+<h2 style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 116%; font-weight: 500; font-size: clamp(40px, 5.4vw, 88px); line-height: .98; letter-spacing: -0.035em">Münzing Chemie</h2>
+<a href="projekt-muenzing-chemie.html" class="btn" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 12px; min-height: 52px; padding: 0 28px; border: 1px solid #ECEAE5; border-radius: 999px; font-size: 14px; font-weight: 500; color: #ECEAE5">Projekt ansehen<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="panel" style="position: sticky; top: 0; height: clamp(600px, 58vw, 880px)">
+<div class="pwrap" style="position: absolute; inset: 0; overflow: hidden; background: #1B1B1A">
+<img class="pbg" src="bilder/erf-1.webp" alt="ERF Medien – Medienhaus" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(20,20,19,.82) 0%, rgba(20,20,19,.1) 62%)"></div>
+<div style="position: absolute; right: clamp(20px, 5vw, 72px); top: 50%; transform: translateY(-50%); z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 14px" aria-label="Fortschritt"><span aria-hidden="true" style="display: block; width: 2px; height: 14px; background: rgba(236,234,229,.35); transition: height .6s"></span><span aria-hidden="true" style="display: block; width: 2px; height: 14px; background: rgba(236,234,229,.35); transition: height .6s"></span><span aria-hidden="true" style="display: block; width: 2px; height: 40px; background: #ECEAE5; transition: height .6s"></span><span aria-hidden="true" style="display: block; width: 2px; height: 14px; background: rgba(236,234,229,.35); transition: height .6s"></span><span aria-hidden="true" style="display: block; width: 2px; height: 14px; background: rgba(236,234,229,.35); transition: height .6s"></span></div>
+<a href="#leistungen" style="position: absolute; right: clamp(20px, 5vw, 72px); bottom: clamp(28px, 4vw, 56px); z-index: 2; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #C9C6BF">Projekte überspringen<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 4v16M6 14l6 6 6-6"></path></svg></a>
+<div style="position: absolute; left: clamp(20px, 5vw, 72px); right: clamp(20px, 5vw, 72px); top: 0; bottom: 0; display: flex; flex-direction: column; justify-content: space-between; padding: clamp(96px, 8vw, 120px) 0 clamp(32px, 5vw, 72px); max-width: 680px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 24px; max-width: 100%"><span style="font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: #D49896">Ausgewählte Projekte · 03 / 05</span></div>
+<div class="reveal" style="display: flex; flex-direction: column; gap: 20px">
+<span style="font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #C9C6BF">Wetzlar · Medien · 2021</span>
+<h2 style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 116%; font-weight: 500; font-size: clamp(40px, 5.4vw, 88px); line-height: .98; letter-spacing: -0.035em">ERF Medien – Medienhaus</h2>
+<a href="projekt-erf-medien.html" class="btn" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 12px; min-height: 52px; padding: 0 28px; border: 1px solid #ECEAE5; border-radius: 999px; font-size: 14px; font-weight: 500; color: #ECEAE5">Projekt ansehen<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="panel" style="position: sticky; top: 0; height: clamp(600px, 58vw, 880px)">
+<div class="pwrap" style="position: absolute; inset: 0; overflow: hidden; background: #1B1B1A">
+<img class="pbg" src="bilder/schweinsberg-1.webp" alt="Wohnhaus Schweinsbergweg" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(20,20,19,.82) 0%, rgba(20,20,19,.1) 62%)"></div>
+<div style="position: absolute; right: clamp(20px, 5vw, 72px); top: 50%; transform: translateY(-50%); z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 14px" aria-label="Fortschritt"><span aria-hidden="true" style="display: block; width: 2px; height: 14px; background: rgba(236,234,229,.35); transition: height .6s"></span><span aria-hidden="true" style="display: block; width: 2px; height: 14px; background: rgba(236,234,229,.35); transition: height .6s"></span><span aria-hidden="true" style="display: block; width: 2px; height: 14px; background: rgba(236,234,229,.35); transition: height .6s"></span><span aria-hidden="true" style="display: block; width: 2px; height: 40px; background: #ECEAE5; transition: height .6s"></span><span aria-hidden="true" style="display: block; width: 2px; height: 14px; background: rgba(236,234,229,.35); transition: height .6s"></span></div>
+<a href="#leistungen" style="position: absolute; right: clamp(20px, 5vw, 72px); bottom: clamp(28px, 4vw, 56px); z-index: 2; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #C9C6BF">Projekte überspringen<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 4v16M6 14l6 6 6-6"></path></svg></a>
+<div style="position: absolute; left: clamp(20px, 5vw, 72px); right: clamp(20px, 5vw, 72px); top: 0; bottom: 0; display: flex; flex-direction: column; justify-content: space-between; padding: clamp(96px, 8vw, 120px) 0 clamp(32px, 5vw, 72px); max-width: 680px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 24px; max-width: 100%"><span style="font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: #D49896">Ausgewählte Projekte · 04 / 05</span></div>
+<div class="reveal" style="display: flex; flex-direction: column; gap: 20px">
+<span style="font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #C9C6BF">Flein · Wohnen · 2012</span>
+<h2 style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 116%; font-weight: 500; font-size: clamp(40px, 5.4vw, 88px); line-height: .98; letter-spacing: -0.035em">Wohnhaus Schweinsbergweg</h2>
+<a href="projekt-wohnhaus-schweinsbergweg.html" class="btn" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 12px; min-height: 52px; padding: 0 28px; border: 1px solid #ECEAE5; border-radius: 999px; font-size: 14px; font-weight: 500; color: #ECEAE5">Projekt ansehen<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="panel" style="position: sticky; top: 0; height: clamp(600px, 58vw, 880px)">
+<div class="pwrap" style="position: absolute; inset: 0; overflow: hidden; background: #1B1B1A">
+<img class="pbg" src="bilder/weingut-1.webp" alt="Weingut Albrecht-Kiessling" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(20,20,19,.82) 0%, rgba(20,20,19,.1) 62%)"></div>
+<div style="position: absolute; right: clamp(20px, 5vw, 72px); top: 50%; transform: translateY(-50%); z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 14px" aria-label="Fortschritt"><span aria-hidden="true" style="display: block; width: 2px; height: 14px; background: rgba(236,234,229,.35); transition: height .6s"></span><span aria-hidden="true" style="display: block; width: 2px; height: 14px; background: rgba(236,234,229,.35); transition: height .6s"></span><span aria-hidden="true" style="display: block; width: 2px; height: 14px; background: rgba(236,234,229,.35); transition: height .6s"></span><span aria-hidden="true" style="display: block; width: 2px; height: 14px; background: rgba(236,234,229,.35); transition: height .6s"></span><span aria-hidden="true" style="display: block; width: 2px; height: 40px; background: #ECEAE5; transition: height .6s"></span></div>
+<a href="#leistungen" style="position: absolute; right: clamp(20px, 5vw, 72px); bottom: clamp(28px, 4vw, 56px); z-index: 2; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #C9C6BF">Projekte überspringen<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 4v16M6 14l6 6 6-6"></path></svg></a>
+<div style="position: absolute; left: clamp(20px, 5vw, 72px); right: clamp(20px, 5vw, 72px); top: 0; bottom: 0; display: flex; flex-direction: column; justify-content: space-between; padding: clamp(96px, 8vw, 120px) 0 clamp(32px, 5vw, 72px); max-width: 680px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 24px; max-width: 100%"><span style="font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: #D49896">Ausgewählte Projekte · 05 / 05</span></div>
+<div class="reveal" style="display: flex; flex-direction: column; gap: 20px">
+<span style="font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #C9C6BF">Heilbronn · Weinbau · 2017</span>
+<h2 style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 116%; font-weight: 500; font-size: clamp(40px, 5.4vw, 88px); line-height: .98; letter-spacing: -0.035em">Weingut Albrecht-Kiessling</h2>
+<a href="projekt-weingut-albrecht-kiessling.html" class="btn" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 12px; min-height: 52px; padding: 0 28px; border: 1px solid #ECEAE5; border-radius: 999px; font-size: 14px; font-weight: 500; color: #ECEAE5">Projekt ansehen<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+</div>
+</section>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<section id="leistungen" style="background: #ECEAE5; color: #121211; padding: clamp(120px, 14vw, 200px) clamp(20px, 5vw, 72px)">
+<div style="display: flex; flex-wrap: wrap; gap: 40px clamp(48px, 8vw, 140px)">
+<div style="flex: 1 1 340px; display: flex; flex-direction: column; gap: 28px">
+<span class="reveal eb" style="color: #5C5A55">Leistungen</span>
+<h2 class="reveal" style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 116%; font-weight: 300; font-size: clamp(40px, 5vw, 80px); line-height: 1; letter-spacing: -0.04em">Von der Idee <span style="font-weight: 500">bis zur Übergabe</span></h2>
+<p class="reveal" style="margin: 0; max-width: 420px; font-size: 17px; line-height: 1.6; color: #3F3D39">Wir begleiten private, gewerbliche und öffentliche Bauherren durch alle Phasen – von der ersten Skizze bis zur Schlüsselübergabe.</p>
+</div>
+<div style="flex: 1.4 1 520px; min-width: 0; border-top: 1px solid #121211">
+
+<div class="reveal" style="border-bottom: 1px solid #C9C6BF">
+<button type="button" class="svc" aria-expanded="true" style="width: 100%; min-height: 88px; display: grid; grid-template-columns: 56px minmax(0, 1fr) 40px; gap: 16px; align-items: center; padding: 20px 0; background: none; border: 0; color: #121211; text-align: left; cursor: pointer">
+<span style="font-size: 13px; color: #5C5A55">01</span>
+<span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: clamp(24px, 2.4vw, 36px); font-weight: 500; letter-spacing: -0.025em">Neubau</span>
+<span aria-hidden="true" style="justify-self: end; width: 36px; height: 36px; border-radius: 50%; border: 1px solid #121211; display: flex; align-items: center; justify-content: center; font-size: 20px; line-height: 1; transform: rotate(45deg); transition: transform .6s cubic-bezier(.16,1,.3,1)">+</span>
+</button>
+
+<div class="fade" style="animation-duration: .8s; display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 16px; padding: 0 0 32px">
+<span></span>
+<div style="display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #3F3D39">Wohnhäuser, Büro-, Gewerbe- und Industriebauten, Schulen und öffentliche Gebäude – entworfen für ihren Ort, geplant bis ins Detail.</p>
+<span style="font-size: 13px; letter-spacing: 0.06em; color: #8F4746">Beispiele: Wohnen am Neckarbogen, BeGo Flein, ERF Medien Wetzlar</span>
+</div>
+</div>
+
+</div>
+
+<div class="reveal" style="border-bottom: 1px solid #C9C6BF">
+<button type="button" class="svc" aria-expanded="false" style="width: 100%; min-height: 88px; display: grid; grid-template-columns: 56px minmax(0, 1fr) 40px; gap: 16px; align-items: center; padding: 20px 0; background: none; border: 0; color: #121211; text-align: left; cursor: pointer">
+<span style="font-size: 13px; color: #5C5A55">02</span>
+<span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: clamp(24px, 2.4vw, 36px); font-weight: 500; letter-spacing: -0.025em">Sanierung &amp; Umbau</span>
+<span aria-hidden="true" style="justify-self: end; width: 36px; height: 36px; border-radius: 50%; border: 1px solid #121211; display: flex; align-items: center; justify-content: center; font-size: 20px; line-height: 1; transform: rotate(0deg); transition: transform .6s cubic-bezier(.16,1,.3,1)">+</span>
+</button>
+
+</div>
+
+<div class="reveal" style="border-bottom: 1px solid #C9C6BF">
+<button type="button" class="svc" aria-expanded="false" style="width: 100%; min-height: 88px; display: grid; grid-template-columns: 56px minmax(0, 1fr) 40px; gap: 16px; align-items: center; padding: 20px 0; background: none; border: 0; color: #121211; text-align: left; cursor: pointer">
+<span style="font-size: 13px; color: #5C5A55">03</span>
+<span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: clamp(24px, 2.4vw, 36px); font-weight: 500; letter-spacing: -0.025em">Brandschutz &amp; Technik</span>
+<span aria-hidden="true" style="justify-self: end; width: 36px; height: 36px; border-radius: 50%; border: 1px solid #121211; display: flex; align-items: center; justify-content: center; font-size: 20px; line-height: 1; transform: rotate(0deg); transition: transform .6s cubic-bezier(.16,1,.3,1)">+</span>
+</button>
+
+</div>
+
+<div class="reveal" style="border-bottom: 1px solid #C9C6BF">
+<button type="button" class="svc" aria-expanded="false" style="width: 100%; min-height: 88px; display: grid; grid-template-columns: 56px minmax(0, 1fr) 40px; gap: 16px; align-items: center; padding: 20px 0; background: none; border: 0; color: #121211; text-align: left; cursor: pointer">
+<span style="font-size: 13px; color: #5C5A55">04</span>
+<span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: clamp(24px, 2.4vw, 36px); font-weight: 500; letter-spacing: -0.025em">Wettbewerbe</span>
+<span aria-hidden="true" style="justify-self: end; width: 36px; height: 36px; border-radius: 50%; border: 1px solid #121211; display: flex; align-items: center; justify-content: center; font-size: 20px; line-height: 1; transform: rotate(0deg); transition: transform .6s cubic-bezier(.16,1,.3,1)">+</span>
+</button>
+
+</div>
+
+</div>
+</div>
+<div class="rule" style="height: 1px; background: #121211; margin: clamp(80px, 10vw, 140px) 0 32px"></div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; align-items: baseline; margin-bottom: 32px">
+<h3 class="reveal" style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 24px; font-weight: 500">Leistungsphasen 1–9 nach HOAI</h3>
+<span style="font-size: 13px; color: #5C5A55">Alle Phasen oder einzelne Leistungen</span>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 120px), 1fr)); gap: 0">
+
+<div class="reveal phase" style="padding: 20px 16px 20px 0; border-left: 1px solid #C9C6BF; padding-left: 16px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 36px; font-weight: 300; line-height: 1; color: #A85857">1</span>
+<span style="font-size: 14px; line-height: 1.4">Grundlagen</span>
+</div>
+
+<div class="reveal phase" style="padding: 20px 16px 20px 0; border-left: 1px solid #C9C6BF; padding-left: 16px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 36px; font-weight: 300; line-height: 1; color: #A85857">2</span>
+<span style="font-size: 14px; line-height: 1.4">Vorplanung</span>
+</div>
+
+<div class="reveal phase" style="padding: 20px 16px 20px 0; border-left: 1px solid #C9C6BF; padding-left: 16px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 36px; font-weight: 300; line-height: 1; color: #A85857">3</span>
+<span style="font-size: 14px; line-height: 1.4">Entwurf</span>
+</div>
+
+<div class="reveal phase" style="padding: 20px 16px 20px 0; border-left: 1px solid #C9C6BF; padding-left: 16px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 36px; font-weight: 300; line-height: 1; color: #A85857">4</span>
+<span style="font-size: 14px; line-height: 1.4">Genehmigung</span>
+</div>
+
+<div class="reveal phase" style="padding: 20px 16px 20px 0; border-left: 1px solid #C9C6BF; padding-left: 16px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 36px; font-weight: 300; line-height: 1; color: #A85857">5</span>
+<span style="font-size: 14px; line-height: 1.4">Ausführungsplanung</span>
+</div>
+
+<div class="reveal phase" style="padding: 20px 16px 20px 0; border-left: 1px solid #C9C6BF; padding-left: 16px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 36px; font-weight: 300; line-height: 1; color: #A85857">6</span>
+<span style="font-size: 14px; line-height: 1.4">Ausschreibung</span>
+</div>
+
+<div class="reveal phase" style="padding: 20px 16px 20px 0; border-left: 1px solid #C9C6BF; padding-left: 16px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 36px; font-weight: 300; line-height: 1; color: #A85857">7</span>
+<span style="font-size: 14px; line-height: 1.4">Vergabe</span>
+</div>
+
+<div class="reveal phase" style="padding: 20px 16px 20px 0; border-left: 1px solid #C9C6BF; padding-left: 16px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 36px; font-weight: 300; line-height: 1; color: #A85857">8</span>
+<span style="font-size: 14px; line-height: 1.4">Bauüberwachung</span>
+</div>
+
+<div class="reveal phase" style="padding: 20px 16px 20px 0; border-left: 1px solid #C9C6BF; padding-left: 16px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 36px; font-weight: 300; line-height: 1; color: #A85857">9</span>
+<span style="font-size: 14px; line-height: 1.4">Objektbetreuung</span>
+</div>
+
+</div>
+<div class="reveal" style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: center; margin-top: clamp(80px, 10vw, 140px); padding: clamp(36px, 5vw, 64px); background: #1B1B1A; color: #ECEAE5">
+<p style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 116%; font-size: clamp(22px, 2.4vw, 34px); font-weight: 300; letter-spacing: -0.02em">Ein Grundstück, ein Bestand, eine Idee? <span style="color: #D49896">Sprechen wir darüber.</span></p>
+<a href="#kontakt" class="btnL" style="display: inline-flex; align-items: center; gap: 12px; min-height: 56px; padding: 0 30px; border-radius: 999px; background: #A85857; color: #FFFFFF; font-size: 15px; font-weight: 500">Erstgespräch vereinbaren<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></a>
+</div>
+</section>
+<section id="weitere" style="padding: clamp(120px, 14vw, 200px) clamp(20px, 5vw, 72px)"><span id="wettbewerbe"></span>
+<div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: flex-end">
+<div style="display: flex; flex-direction: column; gap: 24px"><span class="reveal eb" style="color: #A9A69F">Eine Auswahl aus 57 Projekten</span><h2 class="reveal" style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 116%; font-weight: 300; font-size: clamp(40px, 5.4vw, 84px); letter-spacing: -0.04em; line-height: 1">Mehr <span style="font-weight: 500">Projekte</span></h2></div>
+<div role="group" aria-label="Arbeiten nach Bereich filtern" class="reveal" style="display: flex; flex-wrap: wrap; gap: 8px">
+
+<button type="button" class="chipD" aria-pressed="true" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 1px solid #ECEAE5; background: #ECEAE5; color: #121211; font: 500 13px Inter, sans-serif; letter-spacing: 0.04em; cursor: pointer">Alle</button>
+
+<button type="button" class="chipD" aria-pressed="false" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 1px solid #4A4946; background: transparent; color: #ECEAE5; font: 500 13px Inter, sans-serif; letter-spacing: 0.04em; cursor: pointer">Wohnen</button>
+
+<button type="button" class="chipD" aria-pressed="false" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 1px solid #4A4946; background: transparent; color: #ECEAE5; font: 500 13px Inter, sans-serif; letter-spacing: 0.04em; cursor: pointer">Gewerbe</button>
+
+<button type="button" class="chipD" aria-pressed="false" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 1px solid #4A4946; background: transparent; color: #ECEAE5; font: 500 13px Inter, sans-serif; letter-spacing: 0.04em; cursor: pointer">Öffentliche Bauten</button>
+
+<button type="button" class="chipD" aria-pressed="false" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 1px solid #4A4946; background: transparent; color: #ECEAE5; font: 500 13px Inter, sans-serif; letter-spacing: 0.04em; cursor: pointer">Wettbewerbe</button>
+
+</div>
+</div>
+<div class="rule" style="height: 1px; background: #3A3936; margin: 32px 0 48px"></div>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 56px 32px">
+
+<div class="fade" style="animation-duration: .9s; display: flex; flex-direction: column; gap: 18px">
+<div style="position: relative; aspect-ratio: 3 / 2; overflow: hidden; background: #262624"><img src="bilder/f-channoine.jpg" alt="Channoine Cosmetics" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"></div>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding-bottom: 18px; border-bottom: 1px solid #3A3936">
+<span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 22px; font-weight: 500; letter-spacing: -0.02em">Channoine Cosmetics</span>
+<span style="font-size: 13px; color: #A9A69F; white-space: nowrap">Vaduz</span>
+</div>
+</div>
+
+<div class="fade" style="animation-duration: .9s; display: flex; flex-direction: column; gap: 18px">
+<div style="position: relative; aspect-ratio: 3 / 2; overflow: hidden; background: #262624"><img src="bilder/f-cnt.jpg" alt="CNT_ Bürogebäude mit Labor" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"></div>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding-bottom: 18px; border-bottom: 1px solid #3A3936">
+<span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 22px; font-weight: 500; letter-spacing: -0.02em">CNT_ Bürogebäude mit Labor</span>
+<span style="font-size: 13px; color: #A9A69F; white-space: nowrap">Heilbronn</span>
+</div>
+</div>
+
+<div class="fade" style="animation-duration: .9s; display: flex; flex-direction: column; gap: 18px">
+<div style="position: relative; aspect-ratio: 3 / 2; overflow: hidden; background: #262624"><img src="bilder/t-tsz.jpg" alt="Technisches Schulzentrum" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"></div>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding-bottom: 18px; border-bottom: 1px solid #3A3936">
+<span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 22px; font-weight: 500; letter-spacing: -0.02em">Technisches Schulzentrum</span>
+<span style="font-size: 13px; color: #A9A69F; white-space: nowrap">Heilbronn</span>
+</div>
+</div>
+
+<div class="fade" style="animation-duration: .9s; display: flex; flex-direction: column; gap: 18px">
+<div style="position: relative; aspect-ratio: 3 / 2; overflow: hidden; background: #262624"><img src="bilder/t-sensorik.jpg" alt="Sensorikstudio LVWO" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"></div>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding-bottom: 18px; border-bottom: 1px solid #3A3936">
+<span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 22px; font-weight: 500; letter-spacing: -0.02em">Sensorikstudio LVWO</span>
+<span style="font-size: 13px; color: #A9A69F; white-space: nowrap">Weinsberg</span>
+</div>
+</div>
+
+<div class="fade" style="animation-duration: .9s; display: flex; flex-direction: column; gap: 18px">
+<div style="position: relative; aspect-ratio: 3 / 2; overflow: hidden; background: #262624"><img src="bilder/t-hindenburg.jpg" alt="Seminar für Lehrerbildung" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"></div>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding-bottom: 18px; border-bottom: 1px solid #3A3936">
+<span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 22px; font-weight: 500; letter-spacing: -0.02em">Seminar für Lehrerbildung</span>
+<span style="font-size: 13px; color: #A9A69F; white-space: nowrap">Ludwigsburg</span>
+</div>
+</div>
+
+<div class="fade" style="animation-duration: .9s; display: flex; flex-direction: column; gap: 18px">
+<div style="position: relative; aspect-ratio: 3 / 2; overflow: hidden; background: #262624"><img src="bilder/t-j5.jpg" alt="J5, Neckarbogen" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"></div>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding-bottom: 18px; border-bottom: 1px solid #3A3936">
+<span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 22px; font-weight: 500; letter-spacing: -0.02em">J5, Neckarbogen</span>
+<span style="font-size: 13px; color: #A9A69F; white-space: nowrap">Heilbronn</span>
+</div>
+</div>
+
+<div class="fade" style="animation-duration: .9s; display: flex; flex-direction: column; gap: 18px">
+<div style="position: relative; aspect-ratio: 3 / 2; overflow: hidden; background: #262624"><img src="bilder/t-nelly.jpg" alt="Wohnhaus Nelly-Sachs-Straße" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"></div>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding-bottom: 18px; border-bottom: 1px solid #3A3936">
+<span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 22px; font-weight: 500; letter-spacing: -0.02em">Wohnhaus Nelly-Sachs-Straße</span>
+<span style="font-size: 13px; color: #A9A69F; white-space: nowrap">Untergruppenbach</span>
+</div>
+</div>
+
+<div class="fade" style="animation-duration: .9s; display: flex; flex-direction: column; gap: 18px">
+<div style="position: relative; aspect-ratio: 3 / 2; overflow: hidden; background: #262624"><img src="bilder/t-bego.jpg" alt="BeGo, Bürogebäude" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"></div>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding-bottom: 18px; border-bottom: 1px solid #3A3936">
+<span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 22px; font-weight: 500; letter-spacing: -0.02em">BeGo, Bürogebäude</span>
+<span style="font-size: 13px; color: #A9A69F; white-space: nowrap">Flein</span>
+</div>
+</div>
+
+</div>
+
+
+</section>
+
+
+
+
+<section id="buero" style="padding: clamp(110px, 13vw, 190px) clamp(20px, 5vw, 72px); background: #ECEAE5; color: #121211">
+<div style="display: flex; flex-wrap: wrap; gap: 56px clamp(48px, 8vw, 140px); align-items: flex-start">
+<div style="flex: 1.25 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 36px">
+<h2 class="reveal eb" style="margin: 0; color: #8F4746">Das Büro</h2>
+<p class="reveal" style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 116%; font-weight: 300; font-size: clamp(30px, 3.4vw, 54px); line-height: 1.14; letter-spacing: -0.03em">Seit 1989 planen und bauen wir von Heilbronn aus. Heute führen <span style="color: #8F4746; font-weight: 500">Matthias Müller</span> und <span style="color: #8F4746; font-weight: 500">Benjamin Brötzler</span> das Büro als Partnerschaft.</p>
+<a href="#kontakt" class="reveal" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 14px; font-weight: 500; color: #8F4746">Lernen Sie uns kennen →</a>
+</div>
+<div style="flex: 1 1 360px; min-width: 0; border-top: 1px solid #C9C6BF">
+
+<div class="reveal" style="display: grid; grid-template-columns: minmax(0, 120px) minmax(0, 1fr); gap: 24px; padding: 20px 0; border-bottom: 1px solid #C9C6BF"><span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 20px; font-weight: 300; color: #8F4746">1980–85</span><span style="font-size: 16px; line-height: 1.5; color: #3F3D39">Studium an der HfT Stuttgart</span></div>
+
+<div class="reveal" style="display: grid; grid-template-columns: minmax(0, 120px) minmax(0, 1fr); gap: 24px; padding: 20px 0; border-bottom: 1px solid #C9C6BF"><span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 20px; font-weight: 300; color: #8F4746">1989</span><span style="font-size: 16px; line-height: 1.5; color: #3F3D39">Freier Architekt in Heilbronn</span></div>
+
+<div class="reveal" style="display: grid; grid-template-columns: minmax(0, 120px) minmax(0, 1fr); gap: 24px; padding: 20px 0; border-bottom: 1px solid #C9C6BF"><span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 20px; font-weight: 300; color: #8F4746">1990–96</span><span style="font-size: 16px; line-height: 1.5; color: #3F3D39">Arge mit B. Zimmermann</span></div>
+
+<div class="reveal" style="display: grid; grid-template-columns: minmax(0, 120px) minmax(0, 1fr); gap: 24px; padding: 20px 0; border-bottom: 1px solid #C9C6BF"><span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 20px; font-weight: 300; color: #8F4746">seit 1995</span><span style="font-size: 16px; line-height: 1.5; color: #3F3D39">Mitglied im BDA</span></div>
+
+<div class="reveal" style="display: grid; grid-template-columns: minmax(0, 120px) minmax(0, 1fr); gap: 24px; padding: 20px 0; border-bottom: 1px solid #C9C6BF"><span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 20px; font-weight: 300; color: #8F4746">2009–17</span><span style="font-size: 16px; line-height: 1.5; color: #3F3D39">Vorstand BDA Baden-Württemberg</span></div>
+
+<div class="reveal" style="display: grid; grid-template-columns: minmax(0, 120px) minmax(0, 1fr); gap: 24px; padding: 20px 0; border-bottom: 1px solid #C9C6BF"><span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 20px; font-weight: 300; color: #8F4746">2022</span><span style="font-size: 16px; line-height: 1.5; color: #3F3D39">Partnerschaft mit Benjamin Brötzler</span></div>
+
+</div>
+</div>
+</section>
+
+
+<section id="kontakt" style="padding: clamp(120px, 14vw, 200px) clamp(20px, 5vw, 72px) clamp(100px, 12vw, 160px)">
+<span class="reveal eb" style="color: #A9A69F; margin-bottom: 32px">Kontakt</span>
+<h2 style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 116%; font-weight: 300; font-size: clamp(48px, 8vw, 128px); line-height: 0.95; letter-spacing: -0.045em">
+<span class="wipeX" style="display: block; padding-bottom: .05em">Sprechen wir</span>
+<span class="wipeX" style="display: block; font-weight: 500; padding-bottom: .05em">über Ihr Projekt<span style="color: #A85857">.</span></span>
+</h2>
+<div class="rule" style="height: 1px; background: #3A3936; margin: 72px 0 56px"></div>
+<div style="display: flex; flex-wrap: wrap; gap: 64px clamp(48px, 8vw, 140px)">
+<div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 36px; font-size: 17px; line-height: 1.6">
+<div class="reveal"><div style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #A9A69F; margin-bottom: 12px">Ihre Ansprechpartner</div>Matthias Müller · Benjamin Brötzler</div>
+<div class="reveal"><div style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #A9A69F; margin-bottom: 12px">Adresse</div>Wilhelmstraße 5a<br>74072 Heilbronn<br><a href="https://www.google.com/maps/search/?api=1&amp;query=Wilhelmstra%C3%9Fe+5a+74072+Heilbronn" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: #D49896">Anfahrt planen ↗</a></div>
+<div class="reveal"><div style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #A9A69F; margin-bottom: 12px">Telefon</div><a href="tel:+4971312039190">07131 – 203 91 90</a></div>
+<div class="reveal"><div style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #A9A69F; margin-bottom: 12px">E-Mail</div><a href="mailto:info@architekten-online.com">info@architekten-online.com</a></div>
+</div>
+<div class="reveal" style="flex: 1.5 1 480px; min-width: 0">
+
+<div style="display: flex; flex-direction: column; gap: 28px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 28px 32px">
+<label style="display: flex; flex-direction: column; gap: 4px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #A9A69F">Name *<input class="fld" type="text" name="name" autocomplete="name" required="" aria-required="true" aria-invalid="false" style="border-bottom-color: #4A4946"></label>
+<label style="display: flex; flex-direction: column; gap: 4px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #A9A69F">E-Mail oder Telefon *<input class="fld" type="text" name="kontakt" autocomplete="email" required="" aria-required="true" aria-invalid="false" style="border-bottom-color: #4A4946"></label>
+</div>
+<div role="group" aria-label="Art des Projekts" style="display: flex; flex-direction: column; gap: 14px">
+<span style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #A9A69F">Art des Projekts</span>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+
+<button type="button" class="chipD" aria-pressed="false" style="min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1px solid #4A4946; background: transparent; color: #ECEAE5; font: 500 13px Inter, sans-serif; cursor: pointer">Neubau</button>
+
+<button type="button" class="chipD" aria-pressed="false" style="min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1px solid #4A4946; background: transparent; color: #ECEAE5; font: 500 13px Inter, sans-serif; cursor: pointer">Sanierung / Umbau</button>
+
+<button type="button" class="chipD" aria-pressed="false" style="min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1px solid #4A4946; background: transparent; color: #ECEAE5; font: 500 13px Inter, sans-serif; cursor: pointer">Gewerbe</button>
+
+<button type="button" class="chipD" aria-pressed="false" style="min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1px solid #4A4946; background: transparent; color: #ECEAE5; font: 500 13px Inter, sans-serif; cursor: pointer">Öffentlicher Bau</button>
+
+</div>
+</div>
+<label style="display: flex; flex-direction: column; gap: 4px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #A9A69F">Ihr Vorhaben<textarea class="fld" name="nachricht" rows="4" placeholder="z. B. Neubau eines Einfamilienhauses in Flein, Grundstück vorhanden" style="resize: vertical; min-height: 120px"></textarea></label>
+<label style="display: flex; gap: 12px; align-items: flex-start; font-size: 14px; line-height: 1.5; color: #C9C6BF"><input type="checkbox" aria-invalid="false" style="width: 20px; height: 20px; margin: 2px 0 0; accent-color: #A85857">Ich habe die <a href="datenschutz.html" style="text-decoration: underline">Datenschutzerklärung</a> gelesen und bin mit der Verarbeitung meiner Angaben einverstanden. *</label>
+
+<button type="button" class="btn btnR" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 14px; min-height: 60px; padding: 0 36px; background: #A85857; color: #FFFFFF; border: 0; border-radius: 999px; font: 500 15px Inter, sans-serif; cursor: pointer">Anfrage senden<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></button>
+<span style="font-size: 13px; color: #A9A69F">* Pflichtfeld · Wir antworten innerhalb von zwei Werktagen.</span>
+</div>
+
+
+</div>
+</div>
+
+</section>
+<footer style="padding: clamp(80px, 10vw, 140px) clamp(20px, 5vw, 72px) 32px; background: #161615; color: #ECEAE5; border-top: 1px solid #3A3936">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 48px 40px">
+<div style="display: flex; flex-direction: column; gap: 20px"><a href="#top" aria-label="müller.architekten – Startseite" style="display: flex; align-items: center; gap: 12px; font-family: Archivo, sans-serif; font-stretch: 116%; font-weight: 500; font-size: 18px"><img src="bilder/logo-m.png" alt="" width="40" height="40" style="display: block">müller.architekten</a><span style="max-width: 260px; font-size: 15px; line-height: 1.6; color: #A9A69F">Architektur aus Heilbronn. Seit 1989.</span></div>
+<nav aria-label="Fußnavigation" style="display: flex; flex-direction: column; gap: 4px; font-size: 15px"><span style="font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: #A9A69F; margin-bottom: 10px">Seiten</span><a href="#projekte" style="padding: 6px 0">Projekte</a><a href="#leistungen" style="padding: 6px 0">Leistungen</a><a href="#buero" style="padding: 6px 0">Büro</a><a href="#kontakt" style="padding: 6px 0">Kontakt</a></nav>
+<div style="display: flex; flex-direction: column; gap: 4px; font-size: 15px; line-height: 1.6"><span style="font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: #A9A69F; margin-bottom: 10px">Kontakt</span><a href="tel:+4971312039190" style="padding: 4px 0">07131 – 203 91 90</a><a href="mailto:info@architekten-online.com" style="padding: 4px 0">info@architekten-online.com</a><span style="color: #A9A69F">Wilhelmstraße 5a, 74072 Heilbronn</span></div>
+<div style="display: flex; flex-direction: column; align-items: flex-start; gap: 16px"><a href="#kontakt" class="btnL" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 26px; border-radius: 999px; background: #A85857; color: #FFFFFF; font-size: 14px; font-weight: 500">Projekt anfragen</a><a href="#top" style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 14px; color: #C9C6BF">Nach oben<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20V4M6 10l6-6 6 6"></path></svg></a></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; margin-top: clamp(56px, 7vw, 96px); padding-top: 24px; border-top: 1px solid #3A3936; font-size: 13px; color: #A9A69F"><span>© 2026 müller.architekten.PartGmbB</span><span style="display: flex; gap: 24px"><a href="impressum.html" style="padding: 8px 0">Impressum</a><a href="datenschutz.html" style="padding: 8px 0">Datenschutz</a></span></div>
+</footer>
+
+</div>
+</div>
+<template id="tpl">
+<div style="font-family: Inter, system-ui, sans-serif; color: #ECEAE5; background: #1B1B1A; overflow: clip">
+
+<div aria-hidden="true" class="bar" style="position: fixed; top: 0; left: 0; right: 0; height: 2px; background: #A85857; z-index: 10"></div>
+
+<header style="position: fixed; top: 0; left: 0; right: 0; z-index: 50; transform: translateY({{hdrY}}); background: {{hdrBg}}; backdrop-filter: {{hdrBlur}}; -webkit-backdrop-filter: {{hdrBlur}}; transition: transform .6s cubic-bezier(.16,1,.3,1), background .4s">
+<div class="fade" style="animation-delay: .2s; display: flex; justify-content: space-between; align-items: center; padding: 16px clamp(20px, 5vw, 72px)">
+<a href="#top" aria-label="müller.architekten – Startseite" style="display: flex; align-items: center; gap: 12px; font-family: Archivo, sans-serif; font-stretch: 116%; font-weight: 500; font-size: 17px; color: #F4F2EE"><img src="bilder/logo-m.png" alt="" width="40" height="40" style="display: block">müller.architekten</a>
+<div style="display: flex; align-items: center; gap: 12px"><a href="#kontakt" class="btnL" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border-radius: 999px; background: #A85857; color: #FFFFFF; font-size: 14px; font-weight: 500">Anfragen</a><button type="button" onClick="{{openMenu}}" aria-label="Menü öffnen" aria-expanded="{{menuExp}}" style="width: 52px; height: 52px; border-radius: 50%; background: rgba(27,27,26,.35); border: 1px solid rgba(244,242,238,.35); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; cursor: pointer"><span aria-hidden="true" style="display: block; width: 22px; height: 1.5px; background: #F4F2EE"></span><span aria-hidden="true" style="display: block; width: 22px; height: 1.5px; background: #F4F2EE"></span></button></div>
+</div>
+</header>
+<sc-if value="{{menu}}" hint-placeholder-val="{{ false }}">
+<div role="dialog" aria-modal="true" aria-label="Menü" style="position: fixed; inset: 0; z-index: 90; background: #141413; display: flex; flex-wrap: wrap">
+<div style="flex: 1 1 520px; display: flex; flex-direction: column; padding: 20px clamp(20px, 5vw, 72px) 32px">
+<button type="button" onClick="{{closeMenu}}" aria-label="Menü schließen" style="align-self: flex-end; width: 52px; height: 52px; background: none; border: 1px solid #3A3936; border-radius: 50%; color: #ECEAE5; font-size: 24px; cursor: pointer">×</button>
+<nav aria-label="Hauptnavigation" style="display: flex; flex-direction: column; margin: auto 0">
+<sc-for list="{{menuItems}}" as="m" hint-placeholder-count="5">
+<a href="{{m.href}}" class="mLink" onClick="{{m.go}}" onMouseEnter="{{m.hover}}" onFocus="{{m.hover}}" style="display: flex; align-items: baseline; gap: 18px; padding: 6px 0; font-family: Archivo, sans-serif; font-stretch: 116%; font-weight: 500; font-size: clamp(40px, 5.4vw, 88px); line-height: 1.04; letter-spacing: -0.045em"><span style="font: 400 13px Inter, sans-serif; letter-spacing: 0.1em; color: #A9A69F">{{m.no}}</span>{{m.label}}</a>
+</sc-for>
+</nav>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px; padding-top: 28px; border-top: 1px solid #3A3936">
+<div style="display: flex; flex-direction: column; gap: 6px; font-size: 15px; line-height: 1.6; color: #C9C6BF"><a href="tel:+4971312039190" style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 24px; font-weight: 500; color: #ECEAE5">07131 – 203 91 90</a><a href="mailto:info@architekten-online.com">info@architekten-online.com</a><span>Wilhelmstraße 5a, 74072 Heilbronn</span></div>
+<a href="#kontakt" onClick="{{closeMenu}}" class="btnL" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 26px; border-radius: 999px; background: #A85857; color: #FFFFFF; font-size: 14px; font-weight: 500">Projekt anfragen</a>
+</div>
+</div>
+<div aria-hidden="true" class="menuImg" style="flex: 1 1 380px; position: relative; overflow: hidden; min-height: 260px">
+<sc-for list="{{menuImgs}}" as="mi" hint-placeholder-count="5"><img src="{{mi.src}}" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: {{mi.op}}; transform: scale({{mi.sc}}); transition: opacity .8s cubic-bezier(.16,1,.3,1), transform 1.6s cubic-bezier(.16,1,.3,1)"></sc-for>
+</div>
+</div>
+</sc-if>
+
+<section id="top" class="{{heroCls}}" onClick="{{skipIntro}}" style="position: relative; height: clamp(660px, 62vw, 960px); overflow: hidden; perspective: 1800px">
+<div style="position: absolute; inset: 0"><sc-for list="{{s4slides}}" as="s" hint-placeholder-count="3"><img src="{{s.src}}" alt="{{s.name}}" class="s4slide" fetchpriority="{{s.fp}}" loading="{{s.ld}}" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; animation-delay: {{s.d}}; animation-play-state: {{play}}"></sc-for></div>
+<div aria-hidden="true" class="gr4" style="position: absolute; inset: 0; z-index: 3; background: linear-gradient(to top, rgba(18,18,17,.88) 0%, rgba(18,18,17,.55) 28%, rgba(18,18,17,0) 58%), linear-gradient(to bottom, rgba(18,18,17,.45), rgba(18,18,17,0) 22%)"></div>
+<div aria-hidden="true" style="position: absolute; inset: 0; z-index: 4; display: flex; transform-style: preserve-3d">
+<sc-for list="{{slats}}" as="l" hint-placeholder-count="12"><span class="slat" style="flex: 1; background: #1B1B1A; border-right: 1px solid #232322; animation-delay: {{l.d}}"></span></sc-for>
+</div>
+
+<div style="position: absolute; left: clamp(20px, 5vw, 72px); right: clamp(20px, 5vw, 72px); bottom: clamp(36px, 4.5vw, 64px); z-index: 6; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 32px; color: #F4F2EE">
+<h1 style="margin: 0; max-width: 900px; font-family: Archivo, sans-serif; font-stretch: 116%; font-weight: 300; font-size: clamp(36px, 4.6vw, 76px); line-height: 1.04; letter-spacing: -0.035em; text-shadow: 0 2px 24px rgba(0,0,0,.35)"><span style="display: block; overflow: hidden; padding-bottom: .06em"><span class="rise" style="animation-delay: .5s">Wir planen Gebäude,</span></span><span style="display: block; overflow: hidden; padding-bottom: .06em"><span class="rise" style="animation-delay: .65s; font-weight: 500">die sich in ihren Ort fügen<span style="color: #A85857">.</span></span></span></h1>
+<div class="fade" style="animation-delay: 3.3s; display: flex; align-items: flex-end; gap: 20px"><button type="button" onClick="{{togglePlay}}" aria-pressed="{{pausedStr}}" aria-label="{{playLabel}}" style="width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(244,242,238,.45); background: rgba(27,27,26,.3); color: #F4F2EE; display: flex; align-items: center; justify-content: center; cursor: pointer"><sc-if value="{{paused}}" hint-placeholder-val="{{ false }}"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l13 8-13 8z"></path></svg></sc-if><sc-if value="{{playing}}" hint-placeholder-val="{{ true }}"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6zM14 4h4v16h-4z"></path></svg></sc-if></button><div style="position: relative; width: 300px; height: 76px"><sc-for list="{{s4slides}}" as="s" hint-placeholder-count="3"><div class="s4cap" style="position: absolute; right: 0; bottom: 0; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; text-align: right; animation-delay: {{s.d}}; animation-play-state: {{play}}"><span style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #C9C6BF">{{s.meta}}</span><span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 20px; font-weight: 500; letter-spacing: -0.02em">{{s.name}}</span><span style="display: block; width: 140px; height: 1px; background: rgba(244,242,238,.3)"><span class="s4tick" style="display: block; height: 1px; background: #F4F2EE; animation-delay: {{s.d}}; animation-play-state: {{play}}"></span></span></div></sc-for></div></div>
+</div>
+</section>
+
+<section style="padding: clamp(120px, 16vw, 240px) clamp(20px, 5vw, 72px); background: #ECEAE5; color: #121211">
+<div class="reveal eb" style="color: #5C5A55; margin-bottom: 40px">Haltung</div>
+<p style="margin: 0; max-width: 1240px; font-family: Archivo, sans-serif; font-stretch: 116%; font-weight: 300; font-size: clamp(32px, 4.8vw, 76px); line-height: 1.1; letter-spacing: -0.03em"><sc-for list="{{words}}" as="w" hint-placeholder-count="24"><span class="word" style="color: {{w.c}}; font-weight: {{w.fw}}">{{w.t}} </span></sc-for></p>
+</section>
+
+<div id="projekte">
+<sc-for list="{{panels}}" as="p" hint-placeholder-count="5">
+<section class="panel" style="position: sticky; top: 0; height: clamp(600px, 58vw, 880px)">
+<div class="pwrap" style="position: absolute; inset: 0; overflow: hidden; background: #1B1B1A">
+<img class="pbg" src="{{p.src}}" alt="{{p.name}}" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(20,20,19,.82) 0%, rgba(20,20,19,.1) 62%)"></div>
+<div style="position: absolute; right: clamp(20px, 5vw, 72px); top: 50%; transform: translateY(-50%); z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 14px" aria-label="Fortschritt"><sc-for list="{{p.dots}}" as="dt" hint-placeholder-count="5"><span aria-hidden="true" style="display: block; width: 2px; height: {{dt.h}}; background: {{dt.c}}; transition: height .6s"></span></sc-for></div>
+<a href="#leistungen" style="position: absolute; right: clamp(20px, 5vw, 72px); bottom: clamp(28px, 4vw, 56px); z-index: 2; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #C9C6BF">Projekte überspringen<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 4v16M6 14l6 6 6-6"></path></svg></a>
+<div style="position: absolute; left: clamp(20px, 5vw, 72px); right: clamp(20px, 5vw, 72px); top: 0; bottom: 0; display: flex; flex-direction: column; justify-content: space-between; padding: clamp(96px, 8vw, 120px) 0 clamp(32px, 5vw, 72px); max-width: 680px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 24px; max-width: 100%"><span style="font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: #D49896">Ausgewählte Projekte · {{p.no}} / 05</span></div>
+<div class="reveal" style="display: flex; flex-direction: column; gap: 20px">
+<span style="font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #C9C6BF">{{p.meta}}</span>
+<h2 style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 116%; font-weight: 500; font-size: clamp(40px, 5.4vw, 88px); line-height: .98; letter-spacing: -0.035em">{{p.name}}</h2>
+<a href="{{p.href}}" class="btn" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 12px; min-height: 52px; padding: 0 28px; border: 1px solid #ECEAE5; border-radius: 999px; font-size: 14px; font-weight: 500; color: #ECEAE5">Projekt ansehen<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></a>
+</div>
+</div>
+</div>
+</section>
+</sc-for>
+</div>
+
+
+
+
+
+
+
+
+
+
+<section id="leistungen" style="background: #ECEAE5; color: #121211; padding: clamp(120px, 14vw, 200px) clamp(20px, 5vw, 72px)">
+<div style="display: flex; flex-wrap: wrap; gap: 40px clamp(48px, 8vw, 140px)">
+<div style="flex: 1 1 340px; display: flex; flex-direction: column; gap: 28px">
+<span class="reveal eb" style="color: #5C5A55">Leistungen</span>
+<h2 class="reveal" style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 116%; font-weight: 300; font-size: clamp(40px, 5vw, 80px); line-height: 1; letter-spacing: -0.04em">Von der Idee <span style="font-weight: 500">bis zur Übergabe</span></h2>
+<p class="reveal" style="margin: 0; max-width: 420px; font-size: 17px; line-height: 1.6; color: #3F3D39">Wir begleiten private, gewerbliche und öffentliche Bauherren durch alle Phasen – von der ersten Skizze bis zur Schlüsselübergabe.</p>
+</div>
+<div style="flex: 1.4 1 520px; min-width: 0; border-top: 1px solid #121211">
+<sc-for list="{{services}}" as="v" hint-placeholder-count="4">
+<div class="reveal" style="border-bottom: 1px solid #C9C6BF">
+<button type="button" class="svc" onClick="{{v.toggle}}" aria-expanded="{{v.exp}}" style="width: 100%; min-height: 88px; display: grid; grid-template-columns: 56px minmax(0, 1fr) 40px; gap: 16px; align-items: center; padding: 20px 0; background: none; border: 0; color: #121211; text-align: left; cursor: pointer">
+<span style="font-size: 13px; color: #5C5A55">{{v.no}}</span>
+<span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: clamp(24px, 2.4vw, 36px); font-weight: 500; letter-spacing: -0.025em">{{v.title}}</span>
+<span aria-hidden="true" style="justify-self: end; width: 36px; height: 36px; border-radius: 50%; border: 1px solid #121211; display: flex; align-items: center; justify-content: center; font-size: 20px; line-height: 1; transform: rotate({{v.rot}}); transition: transform .6s cubic-bezier(.16,1,.3,1)">+</span>
+</button>
+<sc-if value="{{v.open}}" hint-placeholder-val="{{ false }}">
+<div class="fade" style="animation-duration: .8s; display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 16px; padding: 0 0 32px">
+<span></span>
+<div style="display: flex; flex-direction: column; gap: 16px">
+<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #3F3D39">{{v.text}}</p>
+<span style="font-size: 13px; letter-spacing: 0.06em; color: #8F4746">Beispiele: {{v.ex}}</span>
+</div>
+</div>
+</sc-if>
+</div>
+</sc-for>
+</div>
+</div>
+<div class="rule" style="height: 1px; background: #121211; margin: clamp(80px, 10vw, 140px) 0 32px"></div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; align-items: baseline; margin-bottom: 32px">
+<h3 class="reveal" style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 24px; font-weight: 500">Leistungsphasen 1–9 nach HOAI</h3>
+<span style="font-size: 13px; color: #5C5A55">Alle Phasen oder einzelne Leistungen</span>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 120px), 1fr)); gap: 0">
+<sc-for list="{{phases}}" as="f" hint-placeholder-count="9">
+<div class="reveal phase" style="padding: 20px 16px 20px 0; border-left: 1px solid #C9C6BF; padding-left: 16px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 36px; font-weight: 300; line-height: 1; color: #A85857">{{f.n}}</span>
+<span style="font-size: 14px; line-height: 1.4">{{f.t}}</span>
+</div>
+</sc-for>
+</div>
+<div class="reveal" style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: center; margin-top: clamp(80px, 10vw, 140px); padding: clamp(36px, 5vw, 64px); background: #1B1B1A; color: #ECEAE5">
+<p style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 116%; font-size: clamp(22px, 2.4vw, 34px); font-weight: 300; letter-spacing: -0.02em">Ein Grundstück, ein Bestand, eine Idee? <span style="color: #D49896">Sprechen wir darüber.</span></p>
+<a href="#kontakt" class="btnL" style="display: inline-flex; align-items: center; gap: 12px; min-height: 56px; padding: 0 30px; border-radius: 999px; background: #A85857; color: #FFFFFF; font-size: 15px; font-weight: 500">Erstgespräch vereinbaren<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></a>
+</div>
+</section>
+<section id="weitere" style="padding: clamp(120px, 14vw, 200px) clamp(20px, 5vw, 72px)"><span id="wettbewerbe"></span>
+<div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between; align-items: flex-end">
+<div style="display: flex; flex-direction: column; gap: 24px"><span class="reveal eb" style="color: #A9A69F">Eine Auswahl aus 57 Projekten</span><h2 class="reveal" style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 116%; font-weight: 300; font-size: clamp(40px, 5.4vw, 84px); letter-spacing: -0.04em; line-height: 1">Mehr <span style="font-weight: 500">Projekte</span></h2></div>
+<div role="group" aria-label="Arbeiten nach Bereich filtern" class="reveal" style="display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{wfilters}}" as="f" hint-placeholder-count="4">
+<button type="button" class="chipD" onClick="{{f.pick}}" aria-pressed="{{f.pressed}}" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: 1px solid {{f.bd}}; background: {{f.bg}}; color: {{f.fg}}; font: 500 13px Inter, sans-serif; letter-spacing: 0.04em; cursor: pointer">{{f.label}}</button>
+</sc-for>
+</div>
+</div>
+<div class="rule" style="height: 1px; background: #3A3936; margin: 32px 0 48px"></div>
+<sc-if value="{{showTiles}}" hint-placeholder-val="{{ true }}"><div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 56px 32px">
+<sc-for list="{{more}}" as="m" hint-placeholder-count="6">
+<div class="fade" style="animation-duration: .9s; display: flex; flex-direction: column; gap: 18px">
+<div style="position: relative; aspect-ratio: 3 / 2; overflow: hidden; background: #262624"><img src="{{m.src}}" alt="{{m.name}}" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover"></div>
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding-bottom: 18px; border-bottom: 1px solid #3A3936">
+<span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 22px; font-weight: 500; letter-spacing: -0.02em">{{m.name}}</span>
+<span style="font-size: 13px; color: #A9A69F; white-space: nowrap">{{m.place}}</span>
+</div>
+</div>
+</sc-for>
+</div></sc-if>
+<sc-if value="{{showComps}}" hint-placeholder-val="{{ false }}"><div class="fade" style="animation-duration: .8s"><p style="margin: 0 0 24px; max-width: 520px; font-size: 16px; line-height: 1.6; color: #C9C6BF">34 Wettbewerbsbeiträge – von der Grundschule bis zum Rathaus.</p><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 0 40px; border-top: 1px solid #3A3936">
+<sc-for list="{{comps}}" as="c" hint-placeholder-count="10">
+<div style="display: flex; justify-content: space-between; gap: 16px; padding: 16px 0; border-bottom: 1px solid #3A3936; font-size: 15px"><span>{{c.n}}</span><span style="color: #A9A69F; white-space: nowrap">{{c.o}}</span></div>
+</sc-for>
+</div>
+<button type="button" class="btnL" onClick="{{toggleComps}}" aria-expanded="{{compsExp}}" style="margin-top: 28px; min-height: 48px; padding: 0 24px; border-radius: 999px; border: 1px solid #ECEAE5; background: transparent; color: #ECEAE5; font: 500 14px Inter, sans-serif; cursor: pointer">{{compsLabel}}</button></div></sc-if>
+
+</section>
+
+
+
+
+<section id="buero" style="padding: clamp(110px, 13vw, 190px) clamp(20px, 5vw, 72px); background: #ECEAE5; color: #121211">
+<div style="display: flex; flex-wrap: wrap; gap: 56px clamp(48px, 8vw, 140px); align-items: flex-start">
+<div style="flex: 1.25 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 36px">
+<h2 class="reveal eb" style="margin: 0; color: #8F4746">Das Büro</h2>
+<p class="reveal" style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 116%; font-weight: 300; font-size: clamp(30px, 3.4vw, 54px); line-height: 1.14; letter-spacing: -0.03em">Seit 1989 planen und bauen wir von Heilbronn aus. Heute führen <span style="color: #8F4746; font-weight: 500">Matthias Müller</span> und <span style="color: #8F4746; font-weight: 500">Benjamin Brötzler</span> das Büro als Partnerschaft.</p>
+<a href="#kontakt" class="reveal" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 14px; font-weight: 500; color: #8F4746">Lernen Sie uns kennen →</a>
+</div>
+<div style="flex: 1 1 360px; min-width: 0; border-top: 1px solid #C9C6BF">
+<sc-for list="{{timelineB}}" as="t" hint-placeholder-count="6">
+<div class="reveal" style="display: grid; grid-template-columns: minmax(0, 120px) minmax(0, 1fr); gap: 24px; padding: 20px 0; border-bottom: 1px solid #C9C6BF"><span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 20px; font-weight: 300; color: #8F4746">{{t.y}}</span><span style="font-size: 16px; line-height: 1.5; color: #3F3D39">{{t.x}}</span></div>
+</sc-for>
+</div>
+</div>
+</section>
+
+
+<section id="kontakt" style="padding: clamp(120px, 14vw, 200px) clamp(20px, 5vw, 72px) clamp(100px, 12vw, 160px)">
+<span class="reveal eb" style="color: #A9A69F; margin-bottom: 32px">Kontakt</span>
+<h2 style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 116%; font-weight: 300; font-size: clamp(48px, 8vw, 128px); line-height: 0.95; letter-spacing: -0.045em">
+<span class="wipeX" style="display: block; padding-bottom: .05em">Sprechen wir</span>
+<span class="wipeX" style="display: block; font-weight: 500; padding-bottom: .05em">über Ihr Projekt<span style="color: #A85857">.</span></span>
+</h2>
+<div class="rule" style="height: 1px; background: #3A3936; margin: 72px 0 56px"></div>
+<div style="display: flex; flex-wrap: wrap; gap: 64px clamp(48px, 8vw, 140px)">
+<div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 36px; font-size: 17px; line-height: 1.6">
+<div class="reveal"><div style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #A9A69F; margin-bottom: 12px">Ihre Ansprechpartner</div>Matthias Müller · Benjamin Brötzler</div>
+<div class="reveal"><div style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #A9A69F; margin-bottom: 12px">Adresse</div>Wilhelmstraße 5a<br>74072 Heilbronn<br><a href="https://www.google.com/maps/search/?api=1&amp;query=Wilhelmstra%C3%9Fe+5a+74072+Heilbronn" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: #D49896">Anfahrt planen ↗</a></div>
+<div class="reveal"><div style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #A9A69F; margin-bottom: 12px">Telefon</div><a href="tel:+4971312039190">07131 – 203 91 90</a></div>
+<div class="reveal"><div style="font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: #A9A69F; margin-bottom: 12px">E-Mail</div><a href="mailto:info@architekten-online.com">info@architekten-online.com</a></div>
+</div>
+<div class="reveal" style="flex: 1.5 1 480px; min-width: 0">
+<sc-if value="{{formOpen}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; flex-direction: column; gap: 28px">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 28px 32px">
+<label style="display: flex; flex-direction: column; gap: 4px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #A9A69F">Name *<input class="fld" type="text" name="name" autocomplete="name" required aria-required="true" aria-invalid="{{errName}}" onInput="{{setName}}" style="border-bottom-color: {{bcName}}"><sc-if value="{{showErrName}}" hint-placeholder-val="{{ false }}"><span role="alert" style="text-transform: none; letter-spacing: 0; font-size: 13px; color: #E59A97">Bitte geben Sie Ihren Namen an.</span></sc-if></label>
+<label style="display: flex; flex-direction: column; gap: 4px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #A9A69F">E-Mail oder Telefon *<input class="fld" type="text" name="kontakt" autocomplete="email" required aria-required="true" aria-invalid="{{errContact}}" onInput="{{setContact}}" style="border-bottom-color: {{bcContact}}"><sc-if value="{{showErrContact}}" hint-placeholder-val="{{ false }}"><span role="alert" style="text-transform: none; letter-spacing: 0; font-size: 13px; color: #E59A97">Wie dürfen wir Sie erreichen?</span></sc-if></label>
+</div>
+<div role="group" aria-label="Art des Projekts" style="display: flex; flex-direction: column; gap: 14px">
+<span style="font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #A9A69F">Art des Projekts</span>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{ptypes}}" as="t" hint-placeholder-count="4">
+<button type="button" class="chipD" onClick="{{t.pick}}" aria-pressed="{{t.pressed}}" style="min-height: 44px; padding: 0 18px; border-radius: 999px; border: 1px solid {{t.bd}}; background: {{t.bg}}; color: {{t.fg}}; font: 500 13px Inter, sans-serif; cursor: pointer">{{t.label}}</button>
+</sc-for>
+</div>
+</div>
+<label style="display: flex; flex-direction: column; gap: 4px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #A9A69F">Ihr Vorhaben<textarea class="fld" name="nachricht" rows="4" placeholder="z. B. Neubau eines Einfamilienhauses in Flein, Grundstück vorhanden" style="resize: vertical; min-height: 120px"></textarea></label>
+<label style="display: flex; gap: 12px; align-items: flex-start; font-size: 14px; line-height: 1.5; color: #C9C6BF"><input type="checkbox" onChange="{{toggleConsent}}" aria-invalid="{{errConsent}}" style="width: 20px; height: 20px; margin: 2px 0 0; accent-color: #A85857">Ich habe die <a href="datenschutz.html" style="text-decoration: underline">Datenschutzerklärung</a> gelesen und bin mit der Verarbeitung meiner Angaben einverstanden. *</label>
+<sc-if value="{{showErrConsent}}" hint-placeholder-val="{{ false }}"><span role="alert" style="margin-top: -16px; font-size: 13px; color: #E59A97">Bitte stimmen Sie der Datenschutzerklärung zu.</span></sc-if>
+<button type="button" onClick="{{send}}" class="btn btnR" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 14px; min-height: 60px; padding: 0 36px; background: #A85857; color: #FFFFFF; border: 0; border-radius: 999px; font: 500 15px Inter, sans-serif; cursor: pointer">Anfrage senden<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></button>
+<span style="font-size: 13px; color: #A9A69F">* Pflichtfeld · Wir antworten innerhalb von zwei Werktagen.</span>
+</div>
+</sc-if>
+<sc-if value="{{sent}}" hint-placeholder-val="{{ false }}">
+<div class="fade" role="status" style="padding: 48px; border: 1px solid #3A3936; display: flex; flex-direction: column; gap: 12px"><span style="font-family: Archivo, sans-serif; font-stretch: 116%; font-size: 36px; font-weight: 500; letter-spacing: -0.03em">Danke für Ihre Anfrage<span style="color: #A85857">.</span></span><span style="font-size: 16px; color: #C9C6BF">Wir melden uns innerhalb von zwei Werktagen bei Ihnen.</span></div>
+</sc-if>
+</div>
+</div>
+
+</section>
+<footer style="padding: clamp(80px, 10vw, 140px) clamp(20px, 5vw, 72px) 32px; background: #161615; color: #ECEAE5; border-top: 1px solid #3A3936">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 48px 40px">
+<div style="display: flex; flex-direction: column; gap: 20px"><a href="#top" aria-label="müller.architekten – Startseite" style="display: flex; align-items: center; gap: 12px; font-family: Archivo, sans-serif; font-stretch: 116%; font-weight: 500; font-size: 18px"><img src="bilder/logo-m.png" alt="" width="40" height="40" style="display: block">müller.architekten</a><span style="max-width: 260px; font-size: 15px; line-height: 1.6; color: #A9A69F">Architektur aus Heilbronn. Seit 1989.</span></div>
+<nav aria-label="Fußnavigation" style="display: flex; flex-direction: column; gap: 4px; font-size: 15px"><span style="font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: #A9A69F; margin-bottom: 10px">Seiten</span><a href="#projekte" style="padding: 6px 0">Projekte</a><a href="#leistungen" style="padding: 6px 0">Leistungen</a><a href="#buero" style="padding: 6px 0">Büro</a><a href="#kontakt" style="padding: 6px 0">Kontakt</a></nav>
+<div style="display: flex; flex-direction: column; gap: 4px; font-size: 15px; line-height: 1.6"><span style="font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: #A9A69F; margin-bottom: 10px">Kontakt</span><a href="tel:+4971312039190" style="padding: 4px 0">07131 – 203 91 90</a><a href="mailto:info@architekten-online.com" style="padding: 4px 0">info@architekten-online.com</a><span style="color: #A9A69F">Wilhelmstraße 5a, 74072 Heilbronn</span></div>
+<div style="display: flex; flex-direction: column; align-items: flex-start; gap: 16px"><a href="#kontakt" class="btnL" style="display: inline-flex; align-items: center; min-height: 52px; padding: 0 26px; border-radius: 999px; background: #A85857; color: #FFFFFF; font-size: 14px; font-weight: 500">Projekt anfragen</a><a href="#top" style="display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-size: 14px; color: #C9C6BF">Nach oben<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20V4M6 10l6-6 6 6"></path></svg></a></div>
+</div>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; margin-top: clamp(56px, 7vw, 96px); padding-top: 24px; border-top: 1px solid #3A3936; font-size: 13px; color: #A9A69F"><span>© 2026 müller.architekten.PartGmbB</span><span style="display: flex; gap: 24px"><a href="impressum.html" style="padding: 8px 0">Impressum</a><a href="datenschutz.html" style="padding: 8px 0">Datenschutz</a></span></div>
+</footer>
+
+</div>
+</template>
+<script src="assets/runtime.js"></script>
+<script>
+class Component extends DCLogic {
+  constructor(p) { super(p); this.state = { filter: 'Alle', open: 0, wf: 'Alle', compsAll: false, sent: false, ptype: '', paused: false, menu: false, hidden: false, solid: false, skip: false, mh: 0, fName: '', fContact: '', consent: false, tried: false }; this.lastY = 0; this.onScroll = this.onScroll.bind(this); }
+  componentDidMount() { try { window.addEventListener('scroll', this.onScroll, { passive: true }); } catch (e) {} try { if (window.localStorage.getItem('ma_seen') === '1') this.setState({ skip: true }); window.localStorage.setItem('ma_seen', '1'); } catch (e) {} }
+  componentWillUnmount() { try { window.removeEventListener('scroll', this.onScroll); } catch (e) {} }
+  onScroll() {
+    const y = window.scrollY || 0;
+    const hidden = y > 240 && y > this.lastY && !this.state.menu;
+    const solid = y > 40;
+    if (y > 30 && !this.state.skip) this.setState({ skip: true });
+    this.lastY = y;
+    if (hidden !== this.state.hidden || solid !== this.state.solid) this.setState({ hidden, solid });
+  }
+  renderVals() {
+    const split = (s, start) => Array.from(s).map((ch, i) => ({ ch, d: (start + i * 0.045).toFixed(3) + 's' }));
+    const B = (id) => 'bilder/' + id;
+    const slides = [
+      [B('weingut-1.webp'), 'Weingut Albrecht-Kiessling', 'Weingut · Holzbau'],
+      [B('hero-1.webp'), 'BeGo, Bürogebäude', 'Flein · Gewerbe'],
+      [B('hero-2.webp'), 'Seminar für Didaktik und Lehrerbildung', 'Ludwigsburg · Öffentlich']
+    ].map((s, i) => ({ src: s[0], name: s[1], meta: s[2], d: i === 0 ? '0s' : '-' + (21 - i * 7) + 's' }));
+    const featured = [
+      ['Channoine Cosmetics', 'Vaduz, Liechtenstein', 'Gewerbe', 'f-channoine.jpg', '3 / 2', '0px'],
+      ['Wohnhaus Armsündersteige', 'Heilbronn', 'Wohnen', 'f-armsuender.jpg', '4 / 5', '180px'],
+      ['CNT_ Bürogebäude mit Labor, Herbststraße 12', 'Heilbronn', 'Gewerbe', 'f-cnt.jpg', '4 / 5', '-140px'],
+      ['Münzing Chemie GmbH', 'Abstatt', 'Industrie', 'f-muenzing.jpg', '3 / 2', '40px'],
+      ['ERF Medien e.V., Medienhaus', 'Wetzlar', 'Gewerbe', 'f-erf.jpg', '3 / 2', '0px'],
+      ['Wohnhaus Schweinsbergweg', 'Flein', 'Wohnen', 'f-schweinsberg.jpg', '4 / 5', '180px']
+    ].map((f, i) => ({ name: f[0], place: f[1], cat: f[2], src: B(f[3]), ratio: f[4], offset: f[5], no: String(i + 1).padStart(2, '0') }));
+    const all = [
+      ['Behördenzentrum Heilbronn, Sanierung', 'Heilbronn', 'Öffentlich'],
+      ['Technisches Schulzentrum Heilbronn, C-Bau', 'Heilbronn', 'Öffentlich', 't-tsz.jpg'],
+      ['J5, Neckarbogen', 'Heilbronn', 'Wohnen', 't-j5.jpg'],
+      ['Wohnen am Neckarbogen L7, Neubau', 'Heilbronn', 'Wohnen'],
+      ['Wohnen am Neckarbogen L8, Neubau', 'Heilbronn', 'Wohnen'],
+      ['CNT_ Bürogebäude mit Labor, Herbststraße 12', 'Heilbronn', 'Gewerbe', 'f-cnt.jpg'],
+      ['Familienwohnen im Holzhaus L5, Neckarbogen', 'Heilbronn', 'Wohnen'],
+      ['ERF Medien e.V., Medienhaus', 'Wetzlar', 'Gewerbe', 'f-erf.jpg'],
+      ['Rathaus Heilbronn, Brandschutz und EDV', 'Heilbronn', 'Öffentlich'],
+      ['BeGo, Bürogebäude', 'Flein', 'Gewerbe', 't-bego.jpg'],
+      ['Seniorenwohnungen mit Tagesbetreuung', 'Heilbronn-Horkheim', 'Wohnen'],
+      ['Weingut Albrecht-Kiessling', '—', 'Gewerbe', 't-weingut.jpg'],
+      ['Staatliches Seminar für Didaktik und Lehrerbildung', 'Ludwigsburg', 'Öffentlich', 't-hindenburg.jpg'],
+      ['Münzing Chemie GmbH', 'Abstatt', 'Gewerbe', 'f-muenzing.jpg'],
+      ['Bürgerhaus Böckingen', 'Heilbronn', 'Öffentlich'],
+      ['HHN Hochschule Heilbronn, Gebäude V', 'Heilbronn', 'Öffentlich'],
+      ['Hotel Pearls and Diamond', 'Heilbronn', 'Gewerbe'],
+      ['Sensorikstudio der LVWO Weinsberg', 'Weinsberg', 'Öffentlich', 't-sensorik.jpg'],
+      ['AKT – Am Kaiser’s Turm', 'Heilbronn', 'Gewerbe'],
+      ['Wohnhaus Nelly-Sachs-Straße', 'Untergruppenbach', 'Wohnen', 't-nelly.jpg'],
+      ['Wohnhaus Schweinsbergweg', 'Flein', 'Wohnen', 'f-schweinsberg.jpg'],
+      ['Channoine Cosmetics', 'Vaduz', 'Gewerbe', 'f-channoine.jpg'],
+      ['Wohnhaus Armsündersteige', 'Heilbronn', 'Wohnen', 'f-armsuender.jpg'],
+      ['m – Buch', '—', 'm-buch']
+    ];
+    const f = this.state.filter;
+    const rows = all.filter((r) => f === 'Alle' || r[2] === f);
+    const labels = { 'Alle': 'Alle', 'Öffentlich': 'Öffentliche Bauten', 'Wohnen': 'Wohnen', 'Gewerbe': 'Verwaltung · Industrie · Gewerbe', 'm-buch': 'm-buch' };
+    const filters = Object.keys(labels).map((k) => ({
+      label: labels[k], pressed: f === k ? 'true' : 'false',
+      bg: f === k ? '#121211' : 'transparent', fg: f === k ? '#ECEAE5' : '#121211',
+      pick: () => this.setState({ filter: k })
+    }));
+    const panels = [
+      ["Wohnhaus Armsündersteige", "Heilbronn · Wohnen · 2001", "armsuender-1.webp", "projekt-wohnhaus-armsuendersteige.html"],
+      ["Münzing Chemie", "Abstatt · Industrie · 2015", "muenzing-1.webp", "projekt-muenzing-chemie.html"],
+      ["ERF Medien – Medienhaus", "Wetzlar · Medien · 2021", "erf-1.webp", "projekt-erf-medien.html"],
+      ["Wohnhaus Schweinsbergweg", "Flein · Wohnen · 2012", "schweinsberg-1.webp", "projekt-wohnhaus-schweinsbergweg.html"],
+      ["Weingut Albrecht-Kiessling", "Heilbronn · Weinbau · 2017", "weingut-1.webp", "projekt-weingut-albrecht-kiessling.html"]
+    ].map((p, i) => ({ name: p[0], meta: p[1], src: B(p[2]), href: p[3], no: '0' + (i + 1), dots: [0,1,2,3,4].map((k) => ({ h: k === i ? '40px' : '14px', c: k === i ? '#ECEAE5' : 'rgba(236,234,229,.35)' })) }));
+    const moreAll = [
+      ['Channoine Cosmetics', 'Vaduz', 'Gewerbe', 'f-channoine.jpg'],
+      ['CNT_ Bürogebäude mit Labor', 'Heilbronn', 'Gewerbe', 'f-cnt.jpg'],
+      ['Technisches Schulzentrum', 'Heilbronn', 'Öffentlich', 't-tsz.jpg'],
+      ['Sensorikstudio LVWO', 'Weinsberg', 'Öffentlich', 't-sensorik.jpg'],
+      ['Seminar für Lehrerbildung', 'Ludwigsburg', 'Öffentlich', 't-hindenburg.jpg'],
+      ['J5, Neckarbogen', 'Heilbronn', 'Wohnen', 't-j5.jpg'],
+      ['Wohnhaus Nelly-Sachs-Straße', 'Untergruppenbach', 'Wohnen', 't-nelly.jpg'],
+      ['BeGo, Bürogebäude', 'Flein', 'Gewerbe', 't-bego.jpg']
+    ];
+    const wf = this.state.wf;
+    const more = moreAll.filter((m) => wf === 'Alle' || wf === 'Wettbewerbe' || m[2] === wf).map((m) => ({ name: m[0], place: m[1], src: B(m[3]) }));
+    const chip = (on) => ({ bg: on ? '#ECEAE5' : 'transparent', fg: on ? '#121211' : '#ECEAE5', bd: on ? '#ECEAE5' : '#4A4946' });
+    const wfilters = ['Alle', 'Wohnen', 'Gewerbe', 'Öffentlich', 'Wettbewerbe'].map((k) => Object.assign({ label: k === 'Öffentlich' ? 'Öffentliche Bauten' : k, pressed: wf === k ? 'true' : 'false', pick: () => this.setState({ wf: k }) }, chip(wf === k)));
+    const compsAllList = [['Neue Grundschule','Heilbronn'],['Neckarbogen F3 „LichtBlick“','Heilbronn'],['Neckarbogen G6 „Gerahmt“','Heilbronn'],['Innerstädtisches Wohnen im Grünen','Neckarwestheim'],['Wohnen am Schlössle','Langenbrettach'],['Wohngebäude mit Kita','Weinsberg'],['Wohnen im Schozachbogen','Talheim'],['Kita Massenbachhausen','Massenbachhausen'],['Familienwohnen im Holzhaus L5','Heilbronn'],['Wohnen am Neckarbogen L8','Heilbronn'],['Verwaltungsgebäude Trefz','Weihenbronn'],['Ökumenisches Gemeindehaus','Fahrenbach'],['Hotel am Stadtgarten','Heilbronn'],['Bahnhof Radolfzell','Radolfzell'],['Mensa Schulzentrum','Ettlingen'],['HVG Werkstattneubau','—'],['Ökumene Neckarbogen','Heilbronn'],['Punkthäuser Herbst-/Lerchenstraße','Heilbronn'],['Gemeindehalle Pfedelbach','Pfedelbach'],['Neubau Volksbank','Heilbronn'],['Kath. Kirchengemeinde St. Joseph','Gaildorf'],['Weinkompetenzzentrum','Brackenheim'],['Campus Goethegymnasium Rutheneum','Gera'],['Weingut Abril','Bischoffingen'],['Neubau Kindertagesstätte','Ellhofen'],['Haus der Begegnung','Heidelberg'],['Rathaus Braunschweig','Braunschweig'],['Industrie- und Handelskammer','Nürnberg'],['Felsengartenkellerei','Besigheim'],['Ganztagsbetreuung und Mensa Sontheim-Ost','Heilbronn'],['Fassadenwettbewerb Kilianshaus','Heilbronn'],['Fassadengestaltung Bohlweg','Braunschweig'],['Neubau Studentenwohnheim','Heidelberg'],['Science Center Hagenbucher','Heilbronn']];
+    const compsAll = this.state.compsAll;
+    const comps = (compsAll ? compsAllList : compsAllList.slice(0, 10)).map((c) => ({ n: c[0], o: c[1] }));
+    const pt = this.state.ptype;
+    const ptypes = ['Neubau', 'Sanierung / Umbau', 'Gewerbe', 'Öffentlicher Bau'].map((k) => Object.assign({ label: k, pressed: pt === k ? 'true' : 'false', pick: () => this.setState({ ptype: pt === k ? '' : k }) }, chip(pt === k)));
+    const paused = this.state.paused;
+    const svc = [
+      ['Neubau', 'Wohnhäuser, Büro-, Gewerbe- und Industriebauten, Schulen und öffentliche Gebäude – entworfen für ihren Ort, geplant bis ins Detail.', 'Wohnen am Neckarbogen, BeGo Flein, ERF Medien Wetzlar'],
+      ['Sanierung & Umbau', 'Wir machen Bestand zukunftsfähig: neue Fassaden, klarere Grundrisse, neue Nutzungen – auch bei großen öffentlichen Bauten.', 'Behördenzentrum Heilbronn, Familiengericht, Wohnheim Schlossgymnasium Künzelsau'],
+      ['Brandschutz & Technik', 'Brandschutzsanierung und Erneuerung der technischen Infrastruktur – in Schulen, Rathäusern und Verwaltungsgebäuden.', 'Rathaus Heilbronn, Technisches Schulzentrum Heilbronn'],
+      ['Wettbewerbe', 'Wir stellen uns dem Vergleich: 34 Wettbewerbsbeiträge – von der Grundschule bis zum Rathaus.', 'Neue Grundschule Heilbronn, Rathaus Braunschweig, IHK Nürnberg']
+    ];
+    const open = this.state.open;
+    const services = svc.map((v, i) => ({ no: '0' + (i + 1), title: v[0], text: v[1], ex: v[2], open: open === i, exp: open === i ? 'true' : 'false', rot: open === i ? '45deg' : '0deg', toggle: () => this.setState({ open: open === i ? -1 : i }) }));
+    const phases = ['Grundlagen', 'Vorplanung', 'Entwurf', 'Genehmigung', 'Ausführungsplanung', 'Ausschreibung', 'Vergabe', 'Bauüberwachung', 'Objektbetreuung'].map((t, i) => ({ n: String(i + 1), t }));
+    const wd = (arr, start) => arr.map((t, i) => ({ t, d: (start + i * 0.08).toFixed(2) + 's' }));
+    const accent = ['Räume,', 'die', 'bleiben'];
+    const words = 'Vom Wohnhaus bis zum Behördenzentrum entwerfen wir Räume, die bleiben – geplant in Heilbronn, gebaut für die Menschen der Region.'
+      .split(' ').map((t) => ({ t, c: accent.indexOf(t) > -1 ? '#A85857' : '#121211', fw: accent.indexOf(t) > -1 ? '500' : '300' }));
+    const names = ['Behördenzentrum', 'Neckarbogen', 'Rathaus Heilbronn', 'Hochschule Heilbronn', 'Bürgerhaus Böckingen', 'Kilianshaus'];
+    const names2 = ['Weingut Albrecht-Kiessling', 'ERF Medien Wetzlar', 'Mönchseegymnasium', 'Lindenparkschule', 'Channoine Vaduz', 'Am Kaiser’s Turm'];
+    const timeline = [
+      ['1980–85', 'Architekturstudium an der HfT Stuttgart'],
+      ['1985–88', 'Mitarbeit in Stuttgarter Architekturbüros'],
+      ['1989', 'Freier Architekt in Heilbronn'],
+      ['1990–96', 'Arbeitsgemeinschaft mit B. Zimmermann'],
+      ['seit 1995', 'Mitglied im Bund Deutscher Architekten (BDA)'],
+      ['2009–17', 'Vorstand BDA Baden-Württemberg'],
+      ['2022', 'Partnerschaft mit Benjamin Brötzler – müller.architekten.PartGmbB']
+    ].map((t) => ({ year: t[0], text: t[1] }));
+    return {
+      h1a: wd(['Wir', 'planen', 'Gebäude,'], 0.15), h1b: wd(['die', 'sich', 'in', 'ihren', 'Ort', 'fügen'], 0.4), timelineB: [['1980–85', 'Studium an der HfT Stuttgart'], ['1989', 'Freier Architekt in Heilbronn'], ['1990–96', 'Arge mit B. Zimmermann'], ['seit 1995', 'Mitglied im BDA'], ['2009–17', 'Vorstand BDA Baden-Württemberg'], ['2022', 'Partnerschaft mit Benjamin Brötzler']].map((t) => ({ y: t[0], x: t[1] })), heroCls: this.state.skip ? 'skip' : '', skipIntro: () => { if (!this.state.skip) this.setState({ skip: true }); },
+menuItems: [['Projekte', '#projekte'], ['Leistungen', '#leistungen'], ['Mehr Projekte', '#weitere'], ['Büro', '#buero'], ['Kontakt', '#kontakt']].map((m, i) => ({ label: m[0], href: m[1], no: '0' + (i + 1), hover: () => { if (this.state.mh !== i) this.setState({ mh: i }); }, go: () => this.setState({ menu: false }) })),
+menuImgs: ["bilder/armsuender-1.webp", "bilder/hero-2.webp", "bilder/muenzing-1.webp", "bilder/weingut-3.webp", "bilder/schweinsberg-1.webp"].map((src, i) => ({ src, op: this.state.mh === i ? '1' : '0', sc: this.state.mh === i ? '1' : '1.06' })),
+showTiles: this.state.wf !== 'Wettbewerbe', showComps: this.state.wf === 'Wettbewerbe',
+setName: (e) => this.setState({ fName: e.target.value }), setContact: (e) => this.setState({ fContact: e.target.value }), toggleConsent: (e) => this.setState({ consent: e.target.checked }),
+showErrName: this.state.tried && !this.state.fName.trim(), showErrContact: this.state.tried && !this.state.fContact.trim(), showErrConsent: this.state.tried && !this.state.consent,
+errName: this.state.tried && !this.state.fName.trim() ? 'true' : 'false', errContact: this.state.tried && !this.state.fContact.trim() ? 'true' : 'false', errConsent: this.state.tried && !this.state.consent ? 'true' : 'false',
+bcName: this.state.tried && !this.state.fName.trim() ? '#E59A97' : '#4A4946', bcContact: this.state.tried && !this.state.fContact.trim() ? '#E59A97' : '#4A4946',
+s4slides: [["bilder/weingut-1.webp", "Weingut Albrecht-Kiessling", "Heilbronn · Weinbau"], ["bilder/armsuender-1.webp", "Wohnhaus Armsündersteige", "Heilbronn · Wohnen"], ["bilder/hero-1.webp", "BeGo, Bürogebäude", "Flein · Gewerbe"]].map((s, i) => ({ src: s[0], name: s[1], meta: s[2], d: (1.6 + i * 7) + 's', fp: i === 0 ? 'high' : 'low', ld: i === 0 ? 'eager' : 'lazy' })), slats: Array.from({ length: 12 }, (_, i) => ({ d: (1.7 + i * 0.07).toFixed(2) + 's' })), hdrBlur: this.state.solid ? 'blur(14px)' : 'none', panels, more, services, phases, wfilters, comps, ptypes, compsExp: compsAll ? 'true' : 'false', compsLabel: compsAll ? 'Weniger anzeigen' : 'Alle 34 Wettbewerbe anzeigen', toggleComps: () => this.setState({ compsAll: !compsAll }), sent: this.state.sent, formOpen: !this.state.sent, send: () => { const ok = this.state.fName.trim() && this.state.fContact.trim() && this.state.consent; if (ok) this.setState({ sent: true }); else this.setState({ tried: true }); }, paused, playing: !paused, pausedStr: paused ? 'true' : 'false', playLabel: paused ? 'Slideshow abspielen' : 'Slideshow pausieren', play: paused ? 'paused' : 'running', togglePlay: () => this.setState({ paused: !paused }), menu: this.state.menu, menuExp: this.state.menu ? 'true' : 'false', openMenu: () => this.setState({ menu: true }), closeMenu: () => this.setState({ menu: false }), hdrY: this.state.hidden ? '-100%' : '0%', hdrBg: this.state.solid ? 'rgba(27,27,26,.86)' : 'rgba(27,27,26,0)', blinds: [0,1,2,3,4,5,6].map((i) => ({ d: (0.35 + i * 0.09).toFixed(2) + 's' })),
+      featured, filters, timeline, words, slides,
+      marquee: names.concat(names, names), marquee2: names2.concat(names2, names2),
+      index: rows.map((r, i) => ({ no: String(i + 1).padStart(2, '0'), name: r[0], place: r[1], thumb: r[3] ? B(r[3]) : '' })),
+      count: String(rows.length)
+    };
+  }
+}
+__mountDC(Component);
+</script>
+</body>
+</html>
