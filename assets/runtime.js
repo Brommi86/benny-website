@@ -89,7 +89,7 @@
     return out;
   }
 
-  var EVENTS = ['click', 'mouseenter', 'mouseleave', 'mousemove', 'input', 'change', 'focus'];
+  var EVENTS = ['click', 'mouseenter', 'mouseleave', 'mousemove', 'input', 'change', 'focus', 'touchstart', 'touchend'];
 
   function applyBindings(live, fresh) {
     for (var i = 0; i < EVENTS.length; i++) {
