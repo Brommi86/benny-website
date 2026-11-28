@@ -1,3 +1,4 @@
+window.__IMGV=(function(){var t={"armsuender-1.webp": [800, 1200], "armsuender-2.webp": [800, 1200], "armsuender-3.webp": [800, 1200], "armsuender-4.webp": [800, 1200], "armsuender-5.webp": [800], "armsuender-6.webp": [800], "armsuender-7.webp": [800, 1200], "armsuender-8.webp": [800, 1200], "erf-1.webp": [800, 1200], "erf-2.webp": [800, 1200], "erf-3.webp": [800, 1200], "erf-4.webp": [800, 1200], "erf-5.webp": [800, 1200], "erf-6.webp": [800, 1200], "erf-7.webp": [800, 1200], "f-armsuender.jpg": [800, 1200], "f-channoine.jpg": [800, 1200], "f-cnt.jpg": [800, 1200], "f-erf.jpg": [800, 1200], "f-muenzing.jpg": [800, 1200], "f-schweinsberg.jpg": [800, 1200], "hero-1.webp": [800, 1200], "hero-2.webp": [800, 1200], "muenzing-1.webp": [800, 1200], "muenzing-2.webp": [800, 1200], "muenzing-3.webp": [800, 1200], "muenzing-4.webp": [800, 1200], "muenzing-5.webp": [800, 1200], "muenzing-6.webp": [800, 1200], "muenzing-7.webp": [800, 1200], "muenzing-8.webp": [800, 1200], "schweinsberg-1.webp": [800, 1200], "schweinsberg-2.webp": [800, 1200], "schweinsberg-3.webp": [800, 1200], "schweinsberg-4.webp": [800], "schweinsberg-5.webp": [800, 1200], "schweinsberg-6.webp": [800], "schweinsberg-7.webp": [800, 1200], "weingut-1.webp": [800, 1200], "weingut-2.webp": [800, 1200], "weingut-3.webp": [800, 1200], "weingut-4.webp": [800, 1200], "weingut-5.webp": [800, 1200], "weingut-6.webp": [800, 1200], "weingut-7.webp": [800, 1200]},f={"armsuender-1.webp": 1600, "armsuender-2.webp": 1600, "armsuender-3.webp": 1600, "armsuender-4.webp": 1600, "armsuender-5.webp": 1000, "armsuender-6.webp": 1000, "armsuender-7.webp": 1600, "armsuender-8.webp": 1600, "erf-1.webp": 1600, "erf-2.webp": 1600, "erf-3.webp": 1600, "erf-4.webp": 1600, "erf-5.webp": 1600, "erf-6.webp": 1600, "erf-7.webp": 1600, "f-armsuender.jpg": 1400, "f-channoine.jpg": 1400, "f-cnt.jpg": 1400, "f-erf.jpg": 1400, "f-muenzing.jpg": 1400, "f-schweinsberg.jpg": 1400, "hero-1.webp": 1600, "hero-2.webp": 1600, "muenzing-1.webp": 1600, "muenzing-2.webp": 1600, "muenzing-3.webp": 1600, "muenzing-4.webp": 1600, "muenzing-5.webp": 1600, "muenzing-6.webp": 1600, "muenzing-7.webp": 1600, "muenzing-8.webp": 1600, "schweinsberg-1.webp": 1600, "schweinsberg-2.webp": 1600, "schweinsberg-3.webp": 1600, "schweinsberg-4.webp": 1000, "schweinsberg-5.webp": 1600, "schweinsberg-6.webp": 1000, "schweinsberg-7.webp": 1600, "weingut-1.webp": 1600, "weingut-2.webp": 1600, "weingut-3.webp": 1600, "weingut-4.webp": 1600, "weingut-5.webp": 1600, "weingut-6.webp": 1600, "weingut-7.webp": 1600};for(var k in t){t[k].full=f[k];}return t;})();
 /* müller.architekten – kleine Laufzeit für die exportierten Seiten.
    Rendert die Vorlage im <template id="tpl"> mit den Werten der Component-Klasse
    und gleicht das DOM bei Zustandsänderungen ab (Eingaben und Animationen bleiben erhalten). */
@@ -81,12 +82,59 @@
           el.setAttribute(name, interp(val, scope));
         }
       }
+      if (el.tagName === 'IMG') enhanceImg(el);
       var kids = [];
       build(n.childNodes, scope, kids);
       for (var c = 0; c < kids.length; c++) el.appendChild(kids[c]);
       out.push(el);
     }
     return out;
+  }
+
+
+  /* Bildgrößen je Gerät + weiche Einblendung */
+  var IMGV = window.__IMGV || {};
+  var LOADED = {};
+  var LIVE = !/jsdom/i.test(navigator.userAgent || '');
+  function enhanceImg(el) {
+    var src = el.getAttribute('src') || '';
+    var m = /^bilder\/([^\/?#]+)$/.exec(src);
+    if (m && IMGV[m[1]]) {
+      var set = IMGV[m[1]].map(function (w) { return 'bilder/' + w + '/' + m[1] + ' ' + w + 'w'; });
+      set.push(src + ' ' + IMGV[m[1]].full + 'w');
+      el.setAttribute('srcset', set.join(', '));
+      if (!el.hasAttribute('sizes')) el.setAttribute('sizes', '100vw');
+    }
+    if (el.getAttribute('loading') === 'lazy') {
+      el.setAttribute('data-lz', '');
+      if (LIVE && !LOADED[src]) el.setAttribute('data-l', '0');
+    }
+  }
+  function markLoaded(img) {
+    var s = img.getAttribute('src');
+    LOADED[s] = true;
+    var all = document.querySelectorAll('img[data-l]');
+    for (var i = 0; i < all.length; i++) if (all[i].getAttribute('src') === s) all[i].removeAttribute('data-l');
+  }
+  if (LIVE) {
+    var st = document.createElement('style');
+    st.textContent = 'img[data-lz]{transition:opacity .9s cubic-bezier(.16,1,.3,1),filter 1.2s cubic-bezier(.16,1,.3,1),transform 1.2s cubic-bezier(.16,1,.3,1)}img[data-l]{opacity:0!important;filter:blur(18px)!important}' +
+      'html.heroOff #top,html.heroOff #top *{animation-play-state:paused!important}html.heroOff #top{--ps:paused!important}' +
+      '@media (prefers-reduced-motion:reduce){img[data-lz]{transition:none}img[data-l]{opacity:1!important;filter:none!important}}';
+    document.head.appendChild(st);
+    document.addEventListener('load', function (e) { if (e.target && e.target.tagName === 'IMG') markLoaded(e.target); }, true);
+    document.addEventListener('error', function (e) { if (e.target && e.target.tagName === 'IMG') markLoaded(e.target); }, true);
+  }
+  function scanLoaded() {
+    var all = document.querySelectorAll('img[data-l]');
+    for (var i = 0; i < all.length; i++) if (all[i].complete && all[i].naturalWidth) markLoaded(all[i]);
+  }
+  function watchHero() {
+    var hero = document.getElementById('top');
+    if (!hero || !('IntersectionObserver' in window)) return;
+    new IntersectionObserver(function (es) {
+      document.documentElement.classList.toggle('heroOff', !es[0].isIntersecting);
+    }, { threshold: 0 }).observe(hero);
   }
 
   var EVENTS = ['click', 'mouseenter', 'mouseleave', 'mousemove', 'input', 'change', 'focus', 'touchstart', 'touchend'];
@@ -167,6 +215,7 @@
     if (!inst.state) inst.state = {};
     render();
     if (typeof inst.componentDidMount === 'function') inst.componentDidMount();
+    if (LIVE) { scanLoaded(); watchHero(); }
     if (location.hash) {
       var t = document.getElementById(decodeURIComponent(location.hash.slice(1)));
       if (t) setTimeout(function () { t.scrollIntoView(); }, 50);
